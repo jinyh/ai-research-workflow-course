@@ -1,0 +1,13 @@
+# 已提交的申请原件，不纳入版本管理
+applied/
+
+# Office 临时文件
+~$*
+
+# macOS
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
