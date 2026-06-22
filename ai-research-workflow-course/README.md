@@ -64,3 +64,4 @@
 - [project-template.md](./project-template.md)：学生期末项目完整模板（第 8 周后使用，含工件状态追踪表）
 - [ethics-and-compliance-template.md](./ethics-and-compliance-template.md)：科研伦理与合规说明模板
 - [resources.md](./resources.md)：工具、案例和参考资源索引（含方法论参考）
+- [trial-lecture-outline.md](./trial-lecture-outline.md)：20 分钟开课评审试讲 PPT 逐页大纲（含每页质量验收标准）
