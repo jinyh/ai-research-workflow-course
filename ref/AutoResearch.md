@@ -1,3 +1,7 @@
+Blog
+https://x.com/Jeyxbt/status/2072341421625884990
+
+
 AutoResearch
 
 https://github.com/alvinreal/awesome-autoresearch
@@ -5,6 +9,7 @@ https://github.com/yibie/awesome-autoresearch
 https://github.com/WecoAI/awesome-autoresearch
 https://github.com/handsome-rich/Awesome-Auto-Research-Tools
 https://github.com/karpathy/autoresearch
+
 
 
 AI Scientist
