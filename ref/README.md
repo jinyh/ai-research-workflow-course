@@ -1,6 +1,6 @@
 # 参考资料索引
 
-最后核验：2026-07-29
+最后核验：2026-07-29（重组子库：books/ 填入 Simon 与 Hamming；talk/ 建立并移入 age-of-ai；template/ 建立并移入交大模版）
 
 `ref/` 保存原始参考和备课线索，默认只读。课程结论不直接以本目录中的汇总文字为依据；引用前应回到原始论文、官方文档、课程主页或上游仓库核验。
 
@@ -22,10 +22,10 @@
 | --- | --- | --- | --- | --- |
 | [AutoResearch.md](./AutoResearch.md) | 链接与项目笔记 | AutoResearch、AI Scientist、课程与工作流案例入口 | B/C | 2026-07-29 已核对文件存在；具体项目描述和链接须授课前回源 |
 | [skills_ref.md](./skills_ref.md) | Skills / 工作流项目笔记 | 分析任务契约、上下文、权限、状态、循环和评价的案例池 | B/C | 2026-07-29 纳入索引；不作为 Skills 安装教程或项目质量背书 |
-| [交大模版.pptx](./交大模版.pptx) | 视觉参考 | 观察学校视觉元素和版式线索 | B | 仅含 2 页视觉样例，存在 `test1` 和空占位符；不能视为完整官方模板 |
-| [age-of-ai-icm-2026.pdf](./age-of-ai-icm-2026.pdf) | ICM 2026 公开演讲文稿 | AI 时代数学研究价值与实践、多目标精化、证明消化链与 AI 使用披露案例 | A | 2026-07-29 纳入索引；演讲文本稳定，但所引 First Proof（1stproof.org）、Leiden declaration（leidendeclaration.ai）、Mathlib 等能力声称与链接属易变信息，授课前须回源核验；能力数据作为报告观点引用，不作已核验事实 |
 | [nature.md](./nature.md) | Nature/Science 文献清单笔记 | AI for Research 代表性论文与系统工作入口 | B/C | 2026-07-29 纳入索引；二手整理，自称非完全穷尽，含具体 DOI/期号/日期（部分标注“约”）属易变，引用具体条目前须回期刊原站核验；不作为已核验事实 |
 | [regulation.md](./regulation.md) | 国内 AI 科研规范整理 | 人主智辅、AI 使用声明、责任归属与禁止事项的国内依据 | B/C | 2026-07-29 纳入索引；二手整理，具体文件名、条款与发布日期须回教育部/科技部/学会官网核验；原则共识可作导向，具体条款授课前回源 |
+| [research-method-选目分析.md](./research-method-选目分析.md) | 全文通读与选目记录 | 对 `research-method/` 资料逐项分级、去重并映射课程课次 | B/C | 2026-07-29 纳入索引；是备课决策记录，不是学生阅读材料或直接证据 |
+| [research-method-补充推荐.md](./research-method-补充推荐.md) | 库外文献推荐线索 | 补足可复现、Agent、实验自动化和评价复盘等空白 | B/C | 2026-07-29 纳入索引；候选条目须回原始论文、官方文档或上游仓库核验后再采用 |
 | [research-method/](./research-method/) | 外部克隆资料库（论文生命周期讲义/经验集） | 传统人工科研方法背景阅读池，按 think→search→write→submit→revise→present→template 组织 | B/C | 2026-07-29 克隆（来源 github.com/secdr/research-method）；多为知乎专栏/教授经验散文/高校讲座 PPT/经典英文写作指南，关键结论须回源；不作为课程证据；含易变条目（2021 基金统计、工具软广等），授课前复核；自带 .git，已加入 .gitignore 不纳入版本管理 |
 
 ## 克隆资料库 research-method/ 课次映射
@@ -76,6 +76,36 @@
 | [papers/d41586-026-00934-w.pdf](./papers/d41586-026-00934-w.pdf) | Nature News “AI research assistants are changing science”（2026-03-26） | 10.1038/d41586-026-00934-w | 2 页社论/新闻，首页已核对 |
 | [papers/s41598-026-63438-7_reference.pdf](./papers/s41598-026-63438-7_reference.pdf) | Bianchini, Geuna & Shermatov, Scientific discovery in the age of AI and supercomputing（Sci Rep, Article in Press） | 10.1038/s41598-026-63438-7 | 首页已核对；计量视角 |
 | [papers/How-AI-slop-is-causing-a-crisis-in.md](./papers/How-AI-slop-is-causing-a-crisis-in.md) | Gibney, How AI slop is causing a crisis in science（Nature 新闻） | 10.1038/d41586-025-03967-9 | 网页存为 Markdown，配图存于 how-ai-slop/；与课程“生成报告≠研究”“防幻觉”相关 |
+
+## 已收集书籍（books/）
+
+课程涉及书籍的原件，按书名归档，与 papers/（论文）平级；不按课次分子目录，课次映射在本表"适用课次"列。级别 A 为正式出版物原件，授课前仍须核对版次与页码。
+
+| 文件 | 书籍与章节 | 适用课次 | 来源 | 时效与核验说明 |
+| --- | --- | --- | --- | --- |
+| [books/Simon_Herbert_A_The_Sciences_of_the_Artificial_3rd_ed.pdf](./books/Simon_Herbert_A_The_Sciences_of_the_Artificial_3rd_ed.pdf) | Simon, H. A. *The Sciences of the Artificial*, 3rd ed., Ch. 5 | 第 1 课课后引导阅读（问题、目标、约束与评价） | [MIT Press](https://mitpress.mit.edu/9780262537537/the-sciences-of-the-artificial/) | 2026-07-29 原件已放入；章主题与 [lesson-01-slides.md](../projects/lesson-01-slides.md) P39 引导阅读一致；授课前核对版次与章号 |
+| [books/Hamming_1997_-_The_Art_of_Doing_Science_and_Engineering.pdf](./books/Hamming_1997_-_The_Art_of_Doing_Science_and_Engineering.pdf) | Hamming, R. W. *The Art of Doing Science and Engineering: Learning to Learn* (1997) | 第 1 课引导阅读（补充，与 Simon 并列；科研方法意识、品味与学会学习） | [Stripe Press](https://stripepress.com/)（2020 再版）；原版 CRC Press 1997 | 2026-07-29 原件已放入；出版方经联网核验；授课前核对所引版次与页码；具体书页 URL 因网络限制待回源补全 |
+
+## 外部讲座与演讲素材（talk/）
+
+他人讲座 PPT、演讲笔记、talk 录像整理稿的归处，与 papers/、books/ 平级。目录已建立。
+
+收录边界：
+- 收：他人讲座 PPT、演讲笔记、公开 talk 整理稿等外部参考素材。
+- 不收：课程自己的正式授课 PPT 母稿（归 `projects/lesson-NN-slides.*`）；试讲材料（归 `final/`）；学校视觉模板（归 `template/`）。
+- 与 `research-method/` 的边界：`research-method/` 是整体克隆库（含 "how to presentation" 等），不拆入 `talk/`，靠本索引"克隆资料库课次映射"表定位。
+
+| 文件 | 讲者/来源 | 主题 | 适用课次 | 级别 | 时效与核验说明 |
+| --- | --- | --- | --- | --- | --- |
+| [talk/age-of-ai-icm-2026.pdf](./talk/age-of-ai-icm-2026.pdf) | 陶哲轩，ICM 2026 公开演讲 | AI 时代数学研究价值与实践、多目标精化、证明消化链与 AI 使用披露案例 | 第 1 课 / 全程 AI 使用披露案例 | A | 2026-07-29 纳入索引；演讲文本稳定，但所引 First Proof（1stproof.org）、Leiden declaration（leidendeclaration.ai）、Mathlib 等能力声称与链接属易变信息，授课前须回源核验；能力数据作为报告观点引用，不作已核验事实 |
+
+## 视觉模板（template/）
+
+学校视觉模板与版式参考。
+
+| 文件 | 内容 | 适用范围 | 级别 | 时效与核验说明 |
+| --- | --- | --- | --- | --- |
+| [template/交大模版.pptx](./template/交大模版.pptx) | 上海交大视觉样例 | 学校视觉元素与版式线索 | B | 仅含 2 页视觉样例，存在 `test1` 和空占位符；不能视为完整官方模板；正式授课 PPT 不以此代替制作 |
 
 ## 优先回源入口
 
