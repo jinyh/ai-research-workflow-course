@@ -9,6 +9,12 @@ applied/
 # 克隆的外部参考资料库（自带 .git，避免被作为子模块或散文件纳入）
 /ref/research-method/
 
+# ref/ 下的外部原件（论文/书/演讲/视觉模板），仅由 README 作索引，不入版本管理
+/ref/papers/
+/ref/books/
+/ref/talk/
+/ref/template/
+
 # 本地模型/API 配置
 .env
 .env.*
