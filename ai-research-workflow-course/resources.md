@@ -1,10 +1,16 @@
 # 资源索引
 
-本页用于组织课程资源。工具会快速变化，授课时应按当学期情况更新具体工具版本；课程要求固定在科研动作和可验证产出上。
+最后更新：2026-07-29
+
+本页用于组织课程资源。工具会快速变化，授课时应按当学期情况更新具体工具版本；课程要求固定在科研动作、可验证产出和个人 Agent Workflow 的评价上。OpenCode 从第 1 课起作为主要课堂工作平台，但课程不以安装、记忆或调用现成 Skills 为目标。
 
 ## 课程内已有参考
 
-当前目录的 [../ref/AutoResearch.md](../ref/AutoResearch.md) 已收集若干 AutoResearch、AI Scientist 和 Agentic AI 课程链接，可作为备课入口。
+原始参考统一从 [ref/README.md](../ref/README.md) 进入。该索引记录来源类别、用途、核验日期和可信度；[AutoResearch.md](../ref/AutoResearch.md) 与 [skills_ref.md](../ref/skills_ref.md) 是进一步探索的线索集，不代表其中每项内容都已成为课程结论。
+
+面向 16 次课的实际选读见 [逐课参考阅读清单](./reading-list.md)。该清单采用“正式书目 + 课堂案例”双层结构：经典书籍选章、同行评议论文、共识报告和正式规范构成主干；GitHub、厂商文章、协议文档、大学课程讲义、演讲稿和转载讲义只作版本化案例。每课控制在 3-4 项，通常只要求 1 项核心阅读。
+
+英文原典配中文阅读范围、术语和问题。课程鼓励学生用 AI 快速建立阅读地图，但必须回到原文定位证据、审计偏差并人工定稿；AI 摘要和未核验引文不构成课程证据。`ref/research-method/` 的转载材料在确认来源与分发许可前只供备课。
 
 ## 可写入申请表的课程资源
 
@@ -20,7 +26,7 @@ English version:
 
 课程引入的结构化研究方法论框架来自以下参考：
 
-- **Harness Research 项目**：本项目提供了八阶段研究链路、研究工件协议、评审门、证据三角验证和追踪规则的完整方法论体系。课程从中提取核心思想并进行通用化适配，其中证据三角验证在本课程中降级为证据分级与多源核验。详见本课程的 `reference-analysis.md` 第 4 节。
+- **Harness Research 项目**：本项目提供了八阶段研究链路、研究工件协议、评审门、证据核验和追踪规则的方法论原型。课程从中提取核心思想并进行通用化适配，其中固定类型组合被调整为证据分级与多源核验。详见本课程的 [reference-analysis.md](./reference-analysis.md) 第 4 节。
 - **BMAD Method**（Build More Architect Dreams）：结构化软件开发方法论，Harness Research 借鉴了其阶段化工作流、工件标准化和质量门机制，并将其适配为学术研究工作流。BMAD 原项目：<https://github.com/bmad-code-org/BMAD-METHOD>
 
 课程适配说明：
@@ -49,7 +55,7 @@ English version:
 
 | 项目 | 关注度 | 核心特色 | 课程借鉴点 |
 | --- | --- | --- | --- |
-| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 授课前更新 | 三文件系统（prepare.py + train.py + program.md）、固定评估预算、单一指标、Git 回滚决策 | 第 12 周"agentic loop"标准案例；方法论提炼：固定预算 + 单一指标 + 二元决策 |
+| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 授课前更新 | 三文件系统（prepare.py + train.py + program.md）、固定评估预算、单一指标、Git 回滚决策 | 第 11 课 agentic loop 标准案例；方法论提炼：固定预算 + 单一指标 + 二元决策 |
 | [sakanaai/ai-scientist](https://github.com/sakanaai/ai-scientist) | 授课前更新 | 端到端自动科研（构思→文献→实验→论文→评审）、模板驱动、Semantic Scholar 集成 | 模板驱动教学设计；评审模拟环节；成本可控的教学场景 |
 | [sakanaai/ai-scientist-v2](https://github.com/sakanaai/ai-scientist-v2) | 授课前更新 | 无模板、最佳优先树搜索（BFTS）、通用化跨 ML 领域、已有 AI 生成论文被 ICLR 2025 Workshop 接收 | 树搜索思维（研究不是线性的）；v1 vs v2 对比作为"模板驱动 vs 自由探索"教学案例 |
 | [Orchestra-Research/AI-research-SKILLs](https://github.com/Orchestra-Research/AI-research-SKILLs) | 授课前更新 | 模块化技能库、双循环架构（内循环优化 + 外循环综合）、代理原生研究工件（ARA） | 技能分类体系；ARA 与课程工件状态追踪思路对齐；双循环架构写入方法论 |
