@@ -1,6 +1,19 @@
 # 已提交的申请原件，不纳入版本管理
 applied/
 
+# 外部或潜在敏感数据目录
+/data
+/raw
+/results
+
+# 克隆的外部参考资料库（自带 .git，避免被作为子模块或散文件纳入）
+/ref/research-method/
+
+# 本地模型/API 配置
+.env
+.env.*
+!.env.example
+
 # Office 临时文件
 ~$*
 
