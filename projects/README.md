@@ -24,6 +24,7 @@
 - [教师教案](./lesson-01-teaching-plan.md)
 - [学生正式讲义](./lesson-01-handout.md)
 - 正式课堂 PPT：[逐页脚本](./lesson-01-slides.md) v1.1.0 已完成（原版留底 `lesson-01-slides-v1.0.0.md`）；不得直接把试讲 PPT 改名充当正式 PPT。
+- [教师文献精读卡集](./lesson-01-reading-notes.md)：第 1 课涉及 8 份文献按 AI 辅助阅读协议产出的精读卡，待教师审阅。
 
 ## 制作顺序
 
