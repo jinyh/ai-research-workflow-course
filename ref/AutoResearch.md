@@ -1,3 +1,5 @@
+> **核验状态（2026-07-29）**：本文件为链接与项目笔记，B/C 级。GitHub 链接、课程信息、项目状态均易变，授课前回源核验；不作为项目质量背书。
+
 Blog
 https://x.com/Jeyxbt/status/2072341421625884990
 
@@ -69,5 +71,8 @@ Workshop/Seminar：University of South Carolina 的 Agentic AI for Research 系�
 结合：选上面课程后，将学到的 agentic 工具应用到自己的 PhD 项目中（e.g., 自动化文献综述 + ML 实验迭代）。
 前提：大多需要 Python 基础，部分支持低代码/无代码入门。
 
+
+Reference
+https://github.com/secdr/research-method， 论文写作与资料分享
 
 

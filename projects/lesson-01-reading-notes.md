@@ -1,10 +1,11 @@
 ---
-版本：v1.0.0
+版本：v1.0.1
 最后更新：2026-07-30
 适用课次：第 1 课
 文档类型：教师文献精读卡集
-状态：待教师审阅
+状态：原文定位已完成；待教师复核与定稿
 变更记录：
+- v1.0.1 (2026-07-30): 区分自动文本定位与教师人工复核，删除与授课无关的模型整合过程说明
 - v1.0.0 (2026-07-30): 按 reading-list.md「AI 辅助经典阅读协议」生成第 1 课涉及 8 份文献的精读卡（Simon Ch.5、Hamming「You and Your Research」、Wang 2023、Lu 2026、Gottweis 2026、Ghareeb 2026、Hao 2026、Tao ICM 2026）。
 ---
 
@@ -12,12 +13,10 @@
 
 > 本笔记按 [reading-list.md](../ai-research-workflow-course/reading-list.md)「AI 辅助经典阅读协议」（AI 导航→原文核验→AI 质疑→偏差审计→人工定稿）生成，字段模板见 [starter-template.md](../ai-research-workflow-course/starter-template.md) 第 5 节。
 >
-> **核验说明**：每张卡的「关键证据及原文位置」字段均由 `pdftotext -layout` 从本地 PDF 真实提取，页码可复查；「AI 初始阅读地图」标「未核验」；「偏差审计」如实记录 AI 偏差或已检查风险点，未虚构错误。所有 PDF 仅本地提取，未联网、未发送外部服务。
+> **核对说明**：每张卡的「关键证据及原文位置」均由 `pdftotext -layout` 从本地 PDF 提取并定位，页码可复查；「AI 初始阅读地图」标「未核验」；「偏差审计」记录已发现偏差或已检查风险点。自动文本定位不等于教师人工审读，课堂引用前仍须由教师回到原文复核。所有 PDF 仅在本地提取，未发送至外部服务。
 >
 > **授课前必修**：时效性信息（First Proof 数据、会议接收率、外链状态、模型版本）授课前须回源核验；书籍页码基于本地 PDF 版本，改引他版须重核。
 >
-> **整合者注**：Lu 卡字段 11 记录了一处 AI 偏差实例——生成 Agent 误将 slides P03 的 Lu 引用记为「卷 620」，实际 slides 与 PDF 均为「Nature 651」（Agent 混淆了 Wang 2023 卷 620 与 Lu 2026 卷 651）。该误判已就地修正，并作为 AI 偏差实例保留在偏差审计中。
-
 ---
 
 ## 文献清单与第 1 课角色
@@ -85,7 +84,7 @@ Herbert A. Simon. *The Sciences of the Artificial*, 3rd ed. MIT Press, 1996（20
 **(9) AI 初始阅读地图（未核验）**
 Ch.5 主题为「设计科学」合法性与课程框架；区分自然科学与人工科学；引入 satisficing；提出七大主题；以饮食问题、旅行商、GPS、魔方阵为例。以上在人工核验前不作引用依据。
 
-**(10) 人工核验过程与结果**
+**(10) 本地原文定位与文本核对**
 用 `pdftotext -layout` 本地提取全 241 页，按 form feed 分页定位 Ch.5 边界（印刷 p.111–138，PDF 物理页 p.123–150）。逐节复查 13 处引文与页码，措辞与 PDF 一致。七大主题汇总（p.134）与正文各节标题逐一对应。比对 reading-list 第 57 行书目、版次、章节、链接一致。
 
 **(11) AI 的错误/过度概括/遗漏/已检查风险（偏差审计）**
@@ -145,7 +144,7 @@ Richard W. Hamming. *The Art of Doing Science and Engineering: Learning to Learn
 **(9) AI 初始阅读地图（未核验）**
 中心问题：如何在科研生涯做出重要工作；论证结构：运气反驳→勇气→选题→复利/style→模糊性→销售表达；关键术语：important problems、courage、style、compound interest、tolerance of ambiguity、open door；预期证据：Shannon、Einstein、Pfann、Tukey、Pasteur、醉酒水手；待追问：Friday afternoons、Socrates 引语、页码 pp.209–215。
 
-**(10) 人工核验过程与结果**
+**(10) 本地原文定位与文本核对**
 用 `pdftotext -layout` 提取 pp.209–227，grep 定位「You and Your Research」为第 30 章（章标题页 p.209，正文止 p.215，后为 Index）。逐条核对第 (9) 步预设：中心问题（p.209）、论证顺序、术语（important problems p.210、courage p.211、style p.214、compound interest p.212、ambiguity p.213、open door p.211）、人物（Shannon p.209–210、Einstein p.209–210、Pfann p.210、Tukey p.212、Pasteur p.209、醉酒水手 p.211/215）、Friday afternoons（p.212）、Socrates（p.214）均核验通过。页码范围 pp.209–215 确认。
 
 **(11) AI 的错误/过度概括/遗漏/已检查风险（偏差审计）**
@@ -206,7 +205,7 @@ AI 已成为跨学科科学发现全过程（数据→表示→假设→实验�
 **(9) AI 初始阅读地图（未核验）**
 中心问题：AI 如何改变科学发现；论证结构：数据采集→表示→假设生成→实验与模拟→挑战展望；关键术语：geometric deep learning、self-supervised learning、inductive bias、neural operator、symbolic regression、PINN；预期证据：总览图、AlphaFold、tokamak；待追问：是否把 autonomous 说成已实现、哪些带量化、哪些是展望。
 
-**(10) 人工核验过程与结果**
+**(10) 本地原文定位与文本核对**
 用 `pdftotext -layout` 本地提取全文，按页脚「Nature | Vol 620 | 3 August 2023」逐页确认 PDF 第 1 页=p.47…第 14 页=p.60。复查：Fig.1 题名与案例清单在 p.48；Fig.3 三子图与牛顿引力律示例在 p.51；Fig.4 tokamak/构象采样/PINN 在 p.53；Grand challenges 节首段与 out-of-distribution 原句在 p.55；Conclusion 原句在 p.56。术语清单经 Box 1（p.49）核对一致。
 
 **(11) AI 的错误/过度概括/遗漏/已检查风险（偏差审计）**
@@ -265,7 +264,7 @@ The AI Scientist 管线（ideation→experimentation→write-up→review）已�
 **(9) AI 初始阅读地图（未核验）**
 系统构成：AI Scientist（生成）+ Automated Reviewer（评审）；管线 Ideation→Experimentation→Write-up→Review；关键结果 1/3 过线、自动评审达人类相当、scaling 带来质量提升；伦理动作 IRB、主办方同意、评审后撤回。未核验：70% 与 32% 接收率是否与 ICLR 2025 官方一致（引用 [38][39] 指向 OpenReview 与 ICLR Fact Sheet，未另行核验）。
 
-**(10) 人工核验过程与结果**
+**(10) 本地原文定位与文本核对**
 仅用本地 `pdftotext` 提取，未联网。核对：卷期页码 PDF 页眉「Nature | Vol 651 | 26 March 2026」，914–919 连续——**与 slides P03 一致（651）**；70% 接收率口径（p.914 摘要、p.917 Limitations）成立；「首轮评审」口径（p.914 first round、p.916 would have been accepted）成立；非「顶级会议正式接收」（p.917 明确 cannot yet meet standards、3 篇均未达主会）成立；6.33 分（p.916）一致。结论：slides P03 关键口径均有原文支撑。
 
 **(11) AI 的错误/过度概括/遗漏/已检查风险（偏差审计）**
@@ -323,7 +322,7 @@ Co-Scientist——基于 Gemini 的多智能体系统，通过「生成—辩论
 **(9) AI 初始阅读地图（未核验）**
 系统多智能体含 Supervisor 与 6 类 agent；验证 AML、肝纤维化、AMR（均体外或文献复现非临床）；测试时计算扩展带来质量提升未见饱和；关键候选 binimetinib、KIRA6、vorinostat；局限集中文献覆盖、幻觉、样本量、临床转化。未核验：卷期页码、KIRA6 IC50 与 18 倍、通用性与验证范围措辞、是否提及 Gemini 3。
 
-**(10) 人工核验过程与结果**
+**(10) 本地原文定位与文本核对**
 用 `pdftotext` 本地提取。卷期页码：首页页眉「NATURE | Vol 655 | 9 July 2026 | 487」，末页 496，正文跨 487–496 ✓。binimetinib IC50（p.492）✓。KIRA6 18 倍（p.493）✓。肝纤维化 vorinostat FDA（p.494）✓。AMR 2 天（p.494）✓。通用性 vs 验证范围措辞（p.489/摘要）✓。Gemini 3 提及（Methods 第 849 页段「such as Gemini 3」；本研究用 Gemini 2.0）✓。局限措辞（p.494）✓。第 (9) 步初始地图均与原文一致，无偏差。
 
 **(11) AI 的错误/过度概括/遗漏/已检查风险（偏差审计）**
@@ -382,7 +381,7 @@ Robin——集成文献检索 agent（Crow、Falcon，基于 PaperQA2）与数�
 **(9) AI 初始阅读地图（未核验）**
 中心问题：AI 多 agent 能否端到端自动完成科学发现；论证结构：引言—系统设计—dAMD 案例验证—消融与对比—讨论局限；关键术语：multi-agent、lab-in-the-loop、hypothesis generation、RPE phagocytosis、ROCK inhibitor、ABCA1、PaperQA2；预期证据：架构图、时间对比表、体外药效图、RNA-seq 差异表达、消融；待追问：是否体内验证、人工时间基线如何得出、是否与通用 LLM agent 对照、安全护栏。
 
-**(10) 人工核验过程与结果**
+**(10) 本地原文定位与文本核对**
 用 `pdftotext` 本地提取，逐页定位至少 7 处可复查位置。书目与 DOI 经首页与正文逐字核对，卷期 655, 497–505 与 PDF 页眉一致 ✓。「semi-autonomous」「lab-in-the-loop」为原文用词 ✓。ripasudil 1.89 倍、ABCA1 adjusted P=2.13×10⁻³³、Finch 22.8%、Deep Research 0 hits 均为原文数字 ✓。「200-fold」出自正文但人工基线为外部估计已标注 ✓。局限与 guardrails 段为原文所列 ✓。
 
 **(11) AI 的错误/过度概括/遗漏/已检查风险（偏差审计）**
@@ -442,7 +441,7 @@ AI 工具采用对个体科学家的产出、引用与职业发展有何影响�
 **(9) AI 初始阅读地图（未核验）**
 主题：AI 对科学的双面影响（个人 vs 集体）；核心数字 3.02×、4.84×、1.37 年、-4.63%、-22%；方法 BERT 识别、41.3M OpenAlex；结论 AI 扩张个人影响但收缩集体焦点；过度概括风险：把 associated with 讲成导致。均未核验。
 
-**(10) 人工核验过程与结果**
+**(10) 本地原文定位与文本核对**
 用 `pdftotext` 本地提取，逐条比对摘要数字与正文/方法/图表对应位置。3.02×、4.84×、1.37 年、4.63%、22% 五数字在摘要（p.1237）与正文对应节（p.1239–1241）均可定位，文字一致未夸大。41,298,433（p.1237–1238）、F1=0.875（p.1238）、Fleiss' κ=0.964（p.1238）、AI 论文占比 0.75%（p.1239）均与正文一致。p.1242 自述「cannot fully identify the causal linkage」确认关联性。knowledge extent 定义于 p.1240，基于 SPECTER 2.0 嵌入 diameter，核验通过。22% 后续参与下降在 p.1241 节核验通过（n=590,325,130）。
 
 **(11) AI 的错误/过度概括/遗漏/已检查风险（偏差审计）**
@@ -522,7 +521,7 @@ Terence Tao（陶哲轩，UCLA）. "Mathematics in the Age of AI". International
 **(9) AI 初始阅读地图（未核验）**
 演讲双层结构：(A) 能力问题（AI Capability Conjecture）被明确搁置；(B) 价值与实践问题（Goals and Values Question）作为正交补展开。核心模型：证明从生成到经典化六阶段流水线，每阶段一次目标修订，显示「优化单点度量触发 Goodhart」。演讲者立场：提升消化权重、常态化 AI 使用披露、条件性分析不预判能力。待核验：First Proof 数据是否如所述、canonicalization「最不易被 AI 优化」是否为判断而非实证、Leiden declaration 内容与状态。
 
-**(10) 人工核验过程与结果**
+**(10) 本地原文定位与文本核对**
 用 `pdftotext` 本地提取 52 页（696 行），按 form feed 分页定位。复查（页码 = PDF 物理页码）：Community Response Question 提出于 p.6，元数学定性 p.7 ✓；AI Capability Conjecture 模板 p.8–11，弱/强形式 p.10–12 ✓；First Proof 与 1stproof.org p.13，第二批数据 p.14 ✓；Working Hypothesis p.15–16，条件性声明 p.16 ✓；Goals and Values Question p.17–18，目标清单 p.19，Goodhart p.21，目标分叉图 p.23 ✓；六阶段 p.24/26/29/37/43 ✓；erdosproblems.com 无人验证 p.28，AI 表述局限 p.30，过度优化移除自然摩擦 p.31，Bourgain 1991 批注图 p.33，Thurston 引文 p.34，AI 过程不透明 p.36 ✓；canonicalization slowest/least amenable/most valuable p.42 ✓；indigestion/proof abundance/impedance mismatch p.44–45，Leiden declaration p.45，responsible disclosure 与脚注 7 p.46，rule of thumb p.48，closing thoughts p.49–50，基础设施清单（Mathlib、Mathematical Discourse、Erdős problems、SAIR 等）p.52 ✓。本卡 (5) 字段所有页码与引文均与原文一致。
 
 **(11) AI 的错误/过度概括/遗漏/已检查风险（偏差审计）**
