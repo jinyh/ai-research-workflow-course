@@ -14,29 +14,6 @@ applied/
 /references/library/talk/
 /references/library/template/
 
-# 迁移过渡：ref/ 旧路径下的同名原件（ref/ → references/ 完成后可删除下列四行）
-/ref/papers/
-/ref/books/
-/ref/talk/
-/ref/template/
-
-# 本地模型/API 配置
-.env
-.env.*
-!.env.example
-
-# Office 临时文件与自动备份
-~$*
-*.bak
-
-# macOS
-.DS_Store
-
-# 编辑器
-.vscode/
-.idea/
-*.swp
-
 # 本地渲染、模板审计、解包、layout、QA 缓存与中间产物
 .work/
 /.tmp/
