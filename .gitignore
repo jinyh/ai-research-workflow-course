@@ -1,15 +1,20 @@
-# 已提交的申请原件，不纳入版本管理
+# 申请原件、外部数据与凭据：不纳入版本管理
+.local/
 applied/
-
-# 外部或潜在敏感数据目录
 /data
 /raw
 /results
 
 # 克隆的外部参考资料库（自带 .git，避免被作为子模块或散文件纳入）
-/ref/research-method/
+/references/library/research-method/
 
-# ref/ 下的外部原件（论文/书/演讲/视觉模板），仅由 README 作索引，不入版本管理
+# references/library/ 下的外部原件（论文/书/演讲/视觉模板），仅由 README 作索引，不入版本管理
+/references/library/papers/
+/references/library/books/
+/references/library/talk/
+/references/library/template/
+
+# 迁移过渡：ref/ 旧路径下的同名原件（ref/ → references/ 完成后可删除下列四行）
 /ref/papers/
 /ref/books/
 /ref/talk/
@@ -20,8 +25,9 @@ applied/
 .env.*
 !.env.example
 
-# Office 临时文件
+# Office 临时文件与自动备份
 ~$*
+*.bak
 
 # macOS
 .DS_Store
@@ -30,3 +36,12 @@ applied/
 .vscode/
 .idea/
 *.swp
+
+# 本地渲染、模板审计、解包、layout、QA 缓存与中间产物
+.work/
+/.tmp/
+/.ppt_master_inputs/
+node_modules/
+
+# inspection / layout 自动产物
+*.ndjson
