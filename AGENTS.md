@@ -48,7 +48,7 @@
 
 - 双引擎/多引擎协作规范见 [docs/collaboration.md](./docs/collaboration.md)。
 - PPT 质量门见 [course/ppt-quality-gates.md](./course/ppt-quality-gates.md)；PPT 设计准则见 [lessons/ppt-design-criteria.md](./lessons/ppt-design-criteria.md)。
-- MCP 能力契约与工具说明见 [docs/tooling.md](./docs/tooling.md)（待建）。
+- MCP 能力契约与工具说明见 [docs/tooling.md](./docs/tooling.md)。
 - 大纲、考核、阶段交付、申请表、提案、参考分析、备课规划和学生模板使用 `v[major].[minor].[patch]`。重大课程结构变化升 major；重要内容或规则新增升 minor；小范围修正升 patch。Git 是主要历史记录；里程碑使用明确提交或 tag。
 
 ## 最低验证要求
