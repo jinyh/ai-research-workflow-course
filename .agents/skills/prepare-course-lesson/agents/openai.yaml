@@ -1,0 +1,18 @@
+# Codex / OpenAI agent 声明（三端兼容用）
+# Claude Code 通过 .claude/skills/prepare-course-lesson 软链接复用同一份 SKILL.md。
+# 运行时发现与触发测试需在本机安装对应 CLI 后补做。
+name: prepare-course-lesson
+description: 单次课备课门控流程（内容门→90分钟教学门→逐页映射门→PPT制作→三重检查→里程碑归档）。禁止跳过门控直接做 PPT。
+instructions: SKILL.md
+references:
+  - references/material-contracts.md
+  - ../../course/ppt-quality-gates.md
+  - ../../lessons/ppt-design-criteria.md
+  - ../../course/sync-rules.md
+  - ../../AGENTS.md
+tools:
+  # 依赖全局 presentation/PPT 能力完成文件级工作；本 skill 只负责门控。
+  - read
+  - write
+  - edit
+  - bash
