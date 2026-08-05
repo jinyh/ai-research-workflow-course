@@ -22,3 +22,6 @@ node_modules/
 
 # inspection / layout 自动产物
 *.ndjson
+
+# macOS 元数据
+.DS_Store
