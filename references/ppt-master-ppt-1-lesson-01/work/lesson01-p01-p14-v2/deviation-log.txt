@@ -1,0 +1,9 @@
+Global
+- The source content slide provides only a title ribbon and blank content field. The user requested additional branded layouts, so each output content slide uses explicitly bounded new primitives below the inherited ribbon.
+- The two zero-size empty body placeholders on source slide 2 are deleted on every duplicated content slide to prevent unresolved edit-mode prompts.
+- The title ribbon, SJTU logo, and inherited footer art remain untouched.
+
+Slides 2–14
+- Visual silhouettes vary among open typography, primary-source evidence, annotated document, evidence comparison, continuous research path, file tree, document-chain view, unequal timeline, rubric bars, peer-review loop, and action checklist.
+- Generic card grids, pills, tabs, fake terminal chrome, and generated illustrations are intentionally excluded.
+

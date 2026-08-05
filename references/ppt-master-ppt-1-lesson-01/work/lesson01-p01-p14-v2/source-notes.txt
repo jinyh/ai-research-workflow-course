@@ -1,0 +1,16 @@
+[Primary sources]
+- Lu, C. et al. Towards end-to-end automation of AI research. Nature 651, 914–919 (2026). https://doi.org/10.1038/s41586-026-10265-5
+- Hao, Q. et al. Artificial intelligence tools expand scientists’ impact but contract science’s focus. Nature 649, 1237–1243 (2026). https://doi.org/10.1038/s41586-025-09922-y
+
+[Course sources]
+- /Users/bright/Projects/courses/graduate/ai-research-workflow-course/syllabus.md
+- /Users/bright/Projects/courses/graduate/ai-research-workflow-course/starter-template.md
+- /Users/bright/Projects/courses/graduate/ai-research-workflow-course/assignments.md
+- /Users/bright/Projects/courses/graduate/ai-research-workflow-course/assessment.md
+- /Users/bright/Projects/courses/graduate/projects/lesson-01-teaching-plan.md
+
+[Asset notes]
+- lu-2026-ai-scientist.pdf downloaded from the official Nature article PDF URL on 2026-08-02.
+- ai-scientist-fig1-page-crop.png and ai-scientist-page1-crop.png are local raster crops of that PDF for classroom projection.
+- hao-2026-fig2.png and hao-2026-fig3.png are existing course assets extracted from the cited Nature article.
+- No AI-generated imagery is used in the first 14-slide pilot.

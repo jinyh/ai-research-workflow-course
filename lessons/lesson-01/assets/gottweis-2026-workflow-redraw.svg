@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="664" height="436" viewBox="0 0 664 436">
+  <rect width="664" height="436" rx="24" fill="#F4F8FB"/>
+  <ellipse cx="332" cy="218" rx="190" ry="128" fill="none" stroke="#D21726" stroke-width="7"/>
+  <path d="M507 168l18 18-25 7" fill="none" stroke="#D21726" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="332" cy="218" r="78" fill="#102D47"/>
+  <text x="332" y="211" text-anchor="middle" fill="#FFFFFF" font-family="Arial, PingFang SC, sans-serif" font-size="24" font-weight="700">Co-Scientist</text>
+  <text x="332" y="247" text-anchor="middle" fill="#FFB1B6" font-family="Arial, PingFang SC, sans-serif" font-size="20">假设演化</text>
+
+  <circle cx="332" cy="70" r="49" fill="#E3EEF8" stroke="#7399BD" stroke-width="4"/>
+  <text x="332" y="78" text-anchor="middle" fill="#20384F" font-family="PingFang SC, Arial, sans-serif" font-size="25">生成</text>
+
+  <circle cx="525" cy="218" r="49" fill="#FFF0DE" stroke="#E58A32" stroke-width="4"/>
+  <text x="525" y="226" text-anchor="middle" fill="#20384F" font-family="PingFang SC, Arial, sans-serif" font-size="25">反思</text>
+
+  <circle cx="332" cy="366" r="49" fill="#E5F3E9" stroke="#4E9B70" stroke-width="4"/>
+  <text x="332" y="374" text-anchor="middle" fill="#20384F" font-family="PingFang SC, Arial, sans-serif" font-size="25">排序</text>
+
+  <circle cx="139" cy="218" r="49" fill="#FCE9EC" stroke="#D95765" stroke-width="4"/>
+  <text x="139" y="226" text-anchor="middle" fill="#20384F" font-family="PingFang SC, Arial, sans-serif" font-size="25">演化</text>
+</svg>

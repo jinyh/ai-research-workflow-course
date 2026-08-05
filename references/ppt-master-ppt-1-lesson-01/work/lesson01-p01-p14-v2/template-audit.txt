@@ -1,0 +1,28 @@
+Source deck: /Users/bright/Projects/courses/graduate/ref/template/交大模版.pptx
+Canvas: 16:9, 1280 × 720
+
+Source slide inventory
+- Slide 1: SJTU cover with logo, campus line art, centered title/body placeholder, date area, and footer ornament.
+- Slide 2: SJTU content slide with red title ribbon, logo, white content field, two zero-size empty body placeholders, and inherited campus-line footer.
+
+Reusable structure
+- Output slide 1 duplicates source slide 1 and rewrites the inherited text placeholder.
+- Output slides 2–14 duplicate source slide 2, rewrite the inherited title placeholder, delete the two empty zero-size placeholders, and use only the bounded white content field below the ribbon for new editable material.
+
+Brand and typography
+- Preserve authentic logo, SJTU red ribbon, campus-line footer, slide size, and inherited master/layout hierarchy.
+- Chinese is primary. English is limited to paper names, methods, files, and code identifiers.
+- Use a system-available CJK sans-serif font for new slide-local text while retaining inherited template typography for the ribbon title.
+
+New layout contract
+- User explicitly authorized retaining SJTU brand while expanding visual silhouettes.
+- The bounded content zone is left=54, top=92, width=1172, height=540 on the 1280 × 720 canvas.
+- New content must not cover the inherited title ribbon, logo, or footer ornament.
+- New primitives remain editable and are used as evidence pages, document annotations, continuous research paths, and authentic course artifacts—not generic UI cards.
+
+Visual provenance
+- Lu et al. (2026): direct render/crop from the official open-access Nature PDF.
+- Hao et al. (2026): direct article figures already extracted into the course asset folder.
+- Course artifacts: text and structure from syllabus.md, starter-template.md, assignments.md, and assessment.md.
+- No generated illustrations, fake screenshots, invented data, or invented student projects.
+

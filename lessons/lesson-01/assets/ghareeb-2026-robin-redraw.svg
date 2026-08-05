@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="664" height="436" viewBox="0 0 664 436">
+  <rect width="664" height="436" rx="24" fill="#F4F8FB"/>
+  <line x1="161" y1="205" x2="197" y2="205" stroke="#D21726" stroke-width="7"/>
+  <line x1="310" y1="205" x2="346" y2="205" stroke="#D21726" stroke-width="7"/>
+  <line x1="459" y1="205" x2="495" y2="205" stroke="#D21726" stroke-width="7"/>
+
+  <rect x="26" y="140" width="135" height="130" rx="20" fill="#E3EEF8" stroke="#7399BD" stroke-width="4"/>
+  <text x="93.5" y="197" text-anchor="middle" fill="#20384F" font-family="PingFang SC, Arial, sans-serif" font-size="25">文献</text>
+  <text x="93.5" y="231" text-anchor="middle" fill="#6B7B8D" font-family="Arial, sans-serif" font-size="18">Literature</text>
+
+  <rect x="175" y="140" width="135" height="130" rx="20" fill="#FFF0DE" stroke="#E58A32" stroke-width="4"/>
+  <text x="242.5" y="197" text-anchor="middle" fill="#20384F" font-family="PingFang SC, Arial, sans-serif" font-size="25">数据分析</text>
+  <text x="242.5" y="231" text-anchor="middle" fill="#6B7B8D" font-family="Arial, sans-serif" font-size="18">Analysis</text>
+
+  <rect x="324" y="140" width="135" height="130" rx="20" fill="#E5F3E9" stroke="#4E9B70" stroke-width="4"/>
+  <text x="391.5" y="197" text-anchor="middle" fill="#20384F" font-family="PingFang SC, Arial, sans-serif" font-size="25">湿实验</text>
+  <text x="391.5" y="231" text-anchor="middle" fill="#6B7B8D" font-family="Arial, sans-serif" font-size="18">Lab</text>
+
+  <rect x="473" y="140" width="165" height="130" rx="20" fill="#FCE9EC" stroke="#D95765" stroke-width="4"/>
+  <text x="555.5" y="197" text-anchor="middle" fill="#20384F" font-family="PingFang SC, Arial, sans-serif" font-size="25">反馈</text>
+  <text x="555.5" y="231" text-anchor="middle" fill="#6B7B8D" font-family="Arial, sans-serif" font-size="18">Feedback</text>
+
+  <path d="M557 287C530 369 145 369 94 287" fill="none" stroke="#D21726" stroke-width="6" stroke-dasharray="13 10"/>
+  <path d="M85 299l9-17 17 10" fill="none" stroke="#D21726" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="332" y="391" text-anchor="middle" fill="#4E9B70" font-family="PingFang SC, Arial, sans-serif" font-size="22" font-weight="600">实验结果回写下一轮</text>
+</svg>
