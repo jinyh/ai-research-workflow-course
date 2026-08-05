@@ -33,14 +33,14 @@
 
 ## 第 1 课
 
-- 待按整改口径同步的现有工作文件：[教师教案](./lesson-01-teaching-plan.md)｜[学生正式讲义](./lesson-01-handout.md)｜[逐页内容母稿](./lesson-01-slides.md) v1.1.7。
-- 既有视觉交付：[可编辑 PPTX](./lesson-01-slides.pptx)。该文件及后续视觉试制稿保留作比较基线；新一轮 PPTX 在内容、90 分钟节奏和逐页映射三道启动门通过前不定稿。
-- 历史稿：[详细教学包](./lesson-01-introduction.md)｜[旧详细讲义](./lesson-01-lecture-notes.md)。两者保留追踪 2026-07-07 的设计，不参与现行制作。
-- [教师文献精读卡集](./lesson-01-reading-notes.md)：第 1 课涉及 8 份文献按 AI 辅助阅读协议产出的精读卡；原文定位已完成，待教师复核与定稿。
+- 待按整改口径同步的现有工作文件：[教师教案](./lesson-01/teaching-plan.md)｜[学生正式讲义](./lesson-01/handout.md)｜[逐页内容母稿](./lesson-01/slides.md) v1.1.7。
+- 既有视觉交付：[可编辑 PPTX](./lesson-01/slides.pptx)。该文件及后续视觉试制稿保留作比较基线；新一轮 PPTX 在内容、90 分钟节奏和逐页映射三道启动门通过前不定稿。
+- 历史稿：[详细教学包](./lesson-01/introduction.md)｜[旧详细讲义](./lesson-01/lecture-notes.md)。两者保留追踪 2026-07-07 的设计，不参与现行制作。
+- [教师文献精读卡集](./lesson-01/reading-notes.md)：第 1 课涉及 8 份文献按 AI 辅助阅读协议产出的精读卡；原文定位已完成，待教师复核与定稿。
 
 ## 第 2 课
 
-- 待按整改口径同步的现有工作文件：[教师教案](./lesson-02-teaching-plan.md)｜[学生正式讲义](./lesson-02-handout.md)｜[逐页内容母稿](./lesson-02-slides.md) v1.1.1。
+- 待按整改口径同步的现有工作文件：[教师教案](./lesson-02/teaching-plan.md)｜[学生正式讲义](./lesson-02/handout.md)｜[逐页内容母稿](./lesson-02/slides.md) v1.1.1。
 - PPTX 尚未进入制作；先按 [备课规划](./备课规划.md) 完成内容、节奏和逐页映射三道启动门。
 
 ## 备课复盘

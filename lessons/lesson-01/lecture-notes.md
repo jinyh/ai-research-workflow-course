@@ -11,7 +11,7 @@
 # 第 1 课讲义｜AI 辅助科研导论与八阶段研究链路
 
 > [!WARNING]
-> 本文件与旧 20 页教学包配套，仅用于历史追踪；研究门课次、OpenCode 起步方式和课堂产出不再代表现行设计。不得据此制作新 PPT 或布置课堂任务；现行依据见 [学生讲义](./lesson-01-handout.md)、[教师教案](./lesson-01-teaching-plan.md) 与 [逐页内容母稿](./lesson-01-slides.md)。
+> 本文件与旧 20 页教学包配套，仅用于历史追踪；研究门课次、OpenCode 起步方式和课堂产出不再代表现行设计。不得据此制作新 PPT 或布置课堂任务；现行依据见 [学生讲义](./handout.md)、[教师教案](./teaching-plan.md) 与 [逐页内容母稿](./slides.md)。
 
 ## 前言
 
@@ -432,7 +432,7 @@ AI 使用记录从第 1 周就开始记。哪怕你这周只用 AI 帮你改写�
 
 ### 内部文档
 
-- [备课规划.md](./备课规划.md)：16 次课逐课备课指南，含第 1 课骨架和外部资料索引
+- [备课规划.md](../备课规划.md)：16 次课逐课备课指南，含第 1 课骨架和外部资料索引
 - [syllabus.md](../../course/syllabus.md)：课程教学安排，八阶段定义和四研究门
 - [assessment.md](../../course/assessment.md)：考核方案，四维度和研究门条件
 - [starter-template.md](../../course/starter-template.md)：第 1-7 周研究脚手架模板

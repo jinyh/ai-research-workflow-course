@@ -73,7 +73,7 @@
 
 ## 五、PPT 执行索引
 
-正式屏显文案、讲述备注、互动、时间和事实边界统一维护在 [lesson-02-slides.md](./lesson-02-slides.md)。
+正式屏显文案、讲述备注、互动、时间和事实边界统一维护在 [lesson-02-slides.md](./slides.md)。
 
 | 页面 | 课堂功能 | 执行提醒 |
 | --- | --- | --- |
@@ -188,8 +188,8 @@ demo-project/
 
 ## 十、关联文件
 
-- [第 2 课学生讲义](./lesson-02-handout.md)
-- [第 2 课 PPT 逐页稿](./lesson-02-slides.md)
+- [第 2 课学生讲义](./handout.md)
+- [第 2 课 PPT 逐页稿](./slides.md)
 - [早期研究脚手架](../../course/starter-template.md)
 - [科研伦理与合规说明模板](../../course/ethics-and-compliance-template.md)
 - [逐课参考阅读清单](../../course/reading-list.md)

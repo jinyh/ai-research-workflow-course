@@ -22,13 +22,13 @@
 
 | 文件 | 类型 | 主要用途 | 级别 | 时效性与核验说明 |
 | --- | --- | --- | --- | --- |
-| [AutoResearch.md](./AutoResearch.md) | 链接与项目笔记 | AutoResearch、AI Scientist、课程与工作流案例入口 | B/C | 2026-07-29 已核对文件存在；具体项目描述和链接须授课前回源 |
-| [skills_ref.md](./skills_ref.md) | Skills / 工作流项目笔记 | 分析任务契约、上下文、权限、状态、循环和评价的案例池 | B/C | 2026-07-29 纳入索引；不作为 Skills 安装教程或项目质量背书 |
-| [nature.md](./nature.md) | Nature/Science 文献清单笔记 | AI for Research 代表性论文与系统工作入口 | B/C | 2026-07-29 纳入索引；二手整理，自称非完全穷尽，含具体 DOI/期号/日期（部分标注“约”）属易变，引用具体条目前须回期刊原站核验；不作为已核验事实 |
-| [regulation.md](./regulation.md) | 国内 AI 科研规范整理 | 人主智辅、AI 使用声明、责任归属与禁止事项的检索线索 | B/C | 2026-08-04 重申：二手整理不能作为正式政策证据；具体文件名、条款与发布日期须回学校、教育部、科技部或学会官网核验 |
-| [research-method-选目分析.md](./research-method-选目分析.md) | 全文通读与选目记录 | 对 `research-method/` 资料逐项分级、去重并映射课程课次 | B/C | 2026-07-29 纳入索引；是备课决策记录，不是学生阅读材料或直接证据 |
-| [research-method-补充推荐.md](./research-method-补充推荐.md) | 库外文献推荐线索 | 补足可复现、Agent、实验自动化和评价复盘等空白 | B/C | 2026-07-29 纳入索引；候选条目须回原始论文、官方文档或上游仓库核验后再采用 |
-| [research-method/](./research-method/) | 外部克隆资料库（论文生命周期讲义/经验集） | 传统人工科研方法背景阅读池，按 think→search→write→submit→revise→present→template 组织 | B/C | 2026-07-29 克隆（来源 github.com/secdr/research-method）；多为知乎专栏/教授经验散文/高校讲座 PPT/经典英文写作指南，关键结论须回源；不作为课程证据；含易变条目（2021 基金统计、工具软广等），授课前复核；自带 .git，已加入 .gitignore 不纳入版本管理 |
+| [AutoResearch.md](./notes/AutoResearch.md) | 链接与项目笔记 | AutoResearch、AI Scientist、课程与工作流案例入口 | B/C | 2026-07-29 已核对文件存在；具体项目描述和链接须授课前回源 |
+| [skills_ref.md](./notes/skills_ref.md) | Skills / 工作流项目笔记 | 分析任务契约、上下文、权限、状态、循环和评价的案例池 | B/C | 2026-07-29 纳入索引；不作为 Skills 安装教程或项目质量背书 |
+| [nature.md](./notes/nature.md) | Nature/Science 文献清单笔记 | AI for Research 代表性论文与系统工作入口 | B/C | 2026-07-29 纳入索引；二手整理，自称非完全穷尽，含具体 DOI/期号/日期（部分标注“约”）属易变，引用具体条目前须回期刊原站核验；不作为已核验事实 |
+| [regulation.md](./notes/regulation.md) | 国内 AI 科研规范整理 | 人主智辅、AI 使用声明、责任归属与禁止事项的检索线索 | B/C | 2026-08-04 重申：二手整理不能作为正式政策证据；具体文件名、条款与发布日期须回学校、教育部、科技部或学会官网核验 |
+| [research-method-选目分析.md](./notes/research-method-选目分析.md) | 全文通读与选目记录 | 对 `research-method/` 资料逐项分级、去重并映射课程课次 | B/C | 2026-07-29 纳入索引；是备课决策记录，不是学生阅读材料或直接证据 |
+| [research-method-补充推荐.md](./notes/research-method-补充推荐.md) | 库外文献推荐线索 | 补足可复现、Agent、实验自动化和评价复盘等空白 | B/C | 2026-07-29 纳入索引；候选条目须回原始论文、官方文档或上游仓库核验后再采用 |
+| [research-method/](./library/research-method/) | 外部克隆资料库（论文生命周期讲义/经验集） | 传统人工科研方法背景阅读池，按 think→search→write→submit→revise→present→template 组织 | B/C | 2026-07-29 克隆（来源 github.com/secdr/research-method）；多为知乎专栏/教授经验散文/高校讲座 PPT/经典英文写作指南，关键结论须回源；不作为课程证据；含易变条目（2021 基金统计、工具软广等），授课前复核；自带 .git，已加入 .gitignore 不纳入版本管理 |
 
 ## 克隆资料库 research-method/ 课次映射
 
@@ -49,7 +49,7 @@
 - `模型评估指标可视化/自动画 Loss-Accuracy 曲线工具`：工具软广
 - `王光辉_出国留学申请总结`、励志类读博心得：与课程方法论无关
 
-| [unesco.md](./unesco.md) | 国际机构立场整理 | 以人为本、透明披露、人工验证与 AI 素养的国际依据 | B/C | 2026-07-29 纳入索引；二手整理，UNESCO 指南持续更新，具体文件版本与条款须回 UNESCO 官网核验；原则共识可作导向，具体条款授课前回源 |
+| [unesco.md](./notes/unesco.md) | 国际机构立场整理 | 以人为本、透明披露、人工验证与 AI 素养的国际依据 | B/C | 2026-07-29 纳入索引；二手整理，UNESCO 指南持续更新，具体文件版本与条款须回 UNESCO 官网核验；原则共识可作导向，具体条款授课前回源 |
 
 ## 已下载论文与期刊材料（papers/）
 

@@ -50,7 +50,7 @@
 ### 后续制作所需素材
 
 - 按 [交大模版.pptx](../../references/library/template/交大模版.pptx) 渲染 33 页正式 PPT，母版、版式与字体与第 1 课一致；
-- 课堂活动材料（权限矩阵填写示范、五字段风险卡模板、同伴互查反馈卡）待按 [`projects/README.md`](./README.md) 制作顺序第 5 步配套；
+- 课堂活动材料（权限矩阵填写示范、五字段风险卡模板、同伴互查反馈卡）待按 [`projects/README.md`](../README.md) 制作顺序第 5 步配套；
 - 教师演示项目 `demo-project/` 的六个预置工件（见教案第六节）需在授课前备好公开或虚构版本。
 
 ---
@@ -114,7 +114,7 @@ Agent 先只读、后写回，还需要回答：
 
 ### 来源与事实边界
 
-承接 [lesson-01-slides.md](./lesson-01-slides.md) P30-P35。
+承接 [lesson-01-slides.md](../lesson-01/slides.md) P30-P35。
 
 ---
 
@@ -1014,7 +1014,7 @@ Prompt 占页面主体，右侧标记 Asset、Action、Control、Review。
 
 ### 来源与事实边界
 
-演示 Prompt 来自 [lesson-02-teaching-plan.md](./lesson-02-teaching-plan.md)。
+演示 Prompt 来自 [lesson-02-teaching-plan.md](./teaching-plan.md)。
 
 ---
 

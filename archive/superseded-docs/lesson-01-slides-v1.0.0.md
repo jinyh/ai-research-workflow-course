@@ -925,7 +925,7 @@ Agent 越权　　　　→ 回到任务与权限
 
 ### 来源与事实边界
 
-[lesson-01-handout.md](./lesson-01-handout.md)“八阶段研究链路”。
+[lesson-01-handout.md](../../lessons/lesson-01/handout.md)“八阶段研究链路”。
 
 ---
 

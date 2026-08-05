@@ -80,7 +80,7 @@
 
 ## 五、PPT 执行索引
 
-正式屏显文案、讲述备注、互动、时间和事实边界统一维护在 [lesson-01-slides.md](./lesson-01-slides.md)，本教案不再重复维护第二套逐页提纲。
+正式屏显文案、讲述备注、互动、时间和事实边界统一维护在 [lesson-01-slides.md](./slides.md)，本教案不再重复维护第二套逐页提纲。
 
 | 页面 | 课堂功能 | 执行提醒 |
 | --- | --- | --- |
@@ -142,10 +142,10 @@
 
 ## 九、关联文件
 
-- [第 1 课正式讲义](./lesson-01-handout.md)
-- [第 1 课正式 PPT 逐页稿](./lesson-01-slides.md)
-- [第 1 课教师文献精读卡](./lesson-01-reading-notes.md)
-- [课程备课规划](./备课规划.md)
+- [第 1 课正式讲义](./handout.md)
+- [第 1 课正式 PPT 逐页稿](./slides.md)
+- [第 1 课教师文献精读卡](./reading-notes.md)
+- [课程备课规划](../备课规划.md)
 - [课程大纲](../../course/syllabus.md)
 - [早期研究脚手架](../../course/starter-template.md)
 - [项目里程碑](../../course/assignments.md)
