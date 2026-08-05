@@ -6,7 +6,7 @@
 
 课程已经批准，当前进入逐课备课、讲义与课件制作、课堂活动设计和考核工具完善阶段。
 
-正式教学材料与开课评审试讲材料分开管理。每次课应分别形成学生正式讲义、教师教案、正式课堂 PPT 和课堂活动材料；名称含 `trial-lecture` 或“试讲”的文件只用于评审与历史追踪，不能替代正式授课材料。具体体例见 [projects/README.md](../lessons/README.md)。
+正式教学材料与开课评审试讲材料分开管理。每次课应分别形成学生正式讲义、教师教案、正式课堂 PPT 和课堂活动材料；名称含 `trial-lecture` 或“试讲”的文件只用于评审与历史追踪，不能替代正式授课材料。具体体例见 [lessons/README.md](../lessons/README.md)。
 
 ## 课程定位
 
@@ -80,3 +80,4 @@ OpenCode 从第 1 课起作为主要课堂工作平台。课程通过现成 Agen
 - [第 1 课教师教案](../lessons/lesson-01/teaching-plan.md)：90 分钟课堂组织、演示和形成性评价
 - [逐课教学材料规则](../lessons/README.md)：正式讲义、教师教案、课堂 PPT、活动材料与试讲材料的职责边界
 - [trial-lecture-outline.md](./trial-lecture-outline.md)：20 分钟开课评审试讲历史大纲，不作为正式讲义或正式课堂 PPT
+- [第 1 课内容入口](../lessons/lesson-01/README.md)：第 1 课全部材料的导航、文件关系与阅读路径

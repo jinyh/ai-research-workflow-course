@@ -8,6 +8,7 @@
 - **课程大纲权威源**：[`course/syllabus.md`](./course/syllabus.md)
 - **逐课备课工作区**：[`lessons/README.md`](./lessons/README.md)（含材料状态表与制作顺序）
 - **备课规划与复盘**：[`lessons/备课规划.md`](./lessons/备课规划.md)、[`lessons/备课教训.md`](./lessons/备课教训.md)
+- **第 1 课内容入口**：[`lessons/lesson-01/README.md`](./lessons/lesson-01/README.md)（第 1 课全部文件的导航、关系与阅读路径）
 
 ## 目录职责
 
