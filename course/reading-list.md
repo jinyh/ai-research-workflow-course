@@ -127,7 +127,7 @@ AI 生成的作者、题名、年份、页码、DOI 和引文必须回到正式�
 ### 课堂案例
 
 3. **中文检查表案例**
-   沈向洋、华刚：《读科研论文的三个层次、四个阶段与十个问题》。[本地转载副本](<../ref/research-method/how to search/沈向洋、华刚：读科研论文的三个层次、四个阶段与十个问题 - 知乎.pdf>)。只作为中文提问清单；正式分发前须确认原始出处与许可。
+   沈向洋、华刚：《读科研论文的三个层次、四个阶段与十个问题》。[本地转载副本](<../references/library/research-method/how to search/沈向洋、华刚：读科研论文的三个层次、四个阶段与十个问题 - 知乎.pdf>)。只作为中文提问清单；正式分发前须确认原始出处与许可。
 
 ## 第 5 课：综述、证据地图与研究空白识别
 
@@ -148,7 +148,7 @@ AI 生成的作者、题名、年份、页码、DOI 和引文必须回到正式�
 ### 课堂案例
 
 4. **研究空白生成案例**
-   Qian, Z. *How to Look for Ideas in Computer Science Research*. [本地转载副本](<../ref/research-method/how to think/How to Look for Ideas in Computer Science Research _ by Zhiyun Qian _ Jan, 2021 _ Medium.pdf>)。只分析维度表和 gap 候选生成；“表格空位”不能自动证明问题重要或真实。
+   Qian, Z. *How to Look for Ideas in Computer Science Research*. [本地转载副本](<../references/library/research-method/how to think/How to Look for Ideas in Computer Science Research _ by Zhiyun Qian _ Jan, 2021 _ Medium.pdf>)。只分析维度表和 gap 候选生成；“表格空位”不能自动证明问题重要或真实。
 
 ## 第 6 课：研究问题、问题定义与第一性原理
 
@@ -169,7 +169,7 @@ AI 生成的作者、题名、年份、页码、DOI 和引文必须回到正式�
 ### 课堂案例
 
 4. **中文问题审校案例**
-   胡晓峰：《浅谈科研课题中的“科学问题”》。[本地副本](<../ref/research-method/how to think/胡晓峰：浅谈科研课题中的“科学问题”.pdf>)。用于识别把背景、意义、工程任务或“怎么做”误写成科学问题的情况。
+   胡晓峰：《浅谈科研课题中的“科学问题”》。[本地副本](<../references/library/research-method/how to think/胡晓峰：浅谈科研课题中的“科学问题”.pdf>)。用于识别把背景、意义、工程任务或“怎么做”误写成科学问题的情况。
 
 ## 第 7 课：机制假设、研究判断与实验设计
 
@@ -190,7 +190,7 @@ AI 生成的作者、题名、年份、页码、DOI 和引文必须回到正式�
 ### 课堂案例
 
 4. **构思策略案例**
-   Raskar, R. *Coming up with New Ideas in Imaging*. [本地 PPT](<../ref/research-method/how to think/Coming up with New Ideas in Imaging.ppt>)。用于生成机制候选，不作为假设成立的证据。
+   Raskar, R. *Coming up with New Ideas in Imaging*. [本地 PPT](<../references/library/research-method/how to think/Coming up with New Ideas in Imaging.ppt>)。用于生成机制候选，不作为假设成立的证据。
 
 ## 第 8 课：学生研究方案分享与设计诊所
 
@@ -325,13 +325,13 @@ AI 生成的作者、题名、年份、页码、DOI 和引文必须回到正式�
    用途：用 outline、图表和数据组织驱动写作。
 
 3. **任选｜经典科学写作论文｜约 25 分钟**
-   Gopen, G. D., & Swan, J. A. “The Science of Scientific Writing.” *American Scientist* 78(6), 550–558 (1990). [期刊页面](https://www.americanscientist.org/article/the-importance-of-context-in-genetics)。本地副本见 [PDF](<../ref/research-method/how to write/science-of-writing.pdf>)。
+   Gopen, G. D., & Swan, J. A. “The Science of Scientific Writing.” *American Scientist* 78(6), 550–558 (1990). [期刊页面](https://www.americanscientist.org/article/the-importance-of-context-in-genetics)。本地副本见 [PDF](<../references/library/research-method/how to write/science-of-writing.pdf>)。
    用途：理解主题位、重音位、旧信息—新信息和读者预期。
 
 ### 课堂案例
 
 4. **CS 写作讲座案例**
-   Simon Peyton Jones. *How to Write a Great Research Paper*. [本地讲稿](<../ref/research-method/how to write/How to write a great research paper.pdf>)。只分析贡献列表、示例先行和反馈驱动修改。
+   Simon Peyton Jones. *How to Write a Great Research Paper*. [本地讲稿](<../references/library/research-method/how to write/How to write a great research paper.pdf>)。只分析贡献列表、示例先行和反馈驱动修改。
 
 ## 第 15 课：同行评审、论证门预检与修改工作坊
 
@@ -348,10 +348,10 @@ AI 生成的作者、题名、年份、页码、DOI 和引文必须回到正式�
 ### 课堂案例
 
 3. **大学课程讲义案例**
-   Stanford Scientific Writing. Unit 8, “How to Do a Peer Review.” [本地课程材料](<../ref/research-method/how to write/Stanford-科学写作课件/Unit_PDFs-Unit8.pdf>)。用于训练具体、建设性、针对工作而非作者的评审语言；正式分发前确认课程材料许可。
+   Stanford Scientific Writing. Unit 8, “How to Do a Peer Review.” [本地课程材料](<../references/library/research-method/how to write/Stanford-科学写作课件/Unit_PDFs-Unit8.pdf>)。用于训练具体、建设性、针对工作而非作者的评审语言；正式分发前确认课程材料许可。
 
 4. **真实回复案例**
-   *Responses to Referee #2 Comments*. [本地案例](<../ref/research-method/how to use template/response letter/Responses to Referee %232 Comments.pdf>)。只分析接受、补证、澄清和保留异议四类回应。魏秀参、施柏鑫等转载材料降为教师备课线索，不进入正式学生书目。
+   *Responses to Referee #2 Comments*. [本地案例](<../references/library/research-method/how to use template/response letter/Responses to Referee %232 Comments.pdf>)。只分析接受、补证、澄清和保留异议四类回应。魏秀参、施柏鑫等转载材料降为教师备课线索，不进入正式学生书目。
 
 ## 第 16 课：最终分享、论证门与项目提交
 
