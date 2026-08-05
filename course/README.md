@@ -81,3 +81,4 @@ OpenCode 从第 1 课起作为主要课堂工作平台。课程通过现成 Agen
 - [逐课教学材料规则](../lessons/README.md)：正式讲义、教师教案、课堂 PPT、活动材料与试讲材料的职责边界
 - [trial-lecture-outline.md](./trial-lecture-outline.md)：20 分钟开课评审试讲历史大纲，不作为正式讲义或正式课堂 PPT
 - [第 1 课内容入口](../lessons/lesson-01/README.md)：第 1 课全部材料的导航、文件关系与阅读路径
+- [第 2 课内容入口](../lessons/lesson-02/README.md)：第 2 课全部材料的导航、文件关系与阅读路径
