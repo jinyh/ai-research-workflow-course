@@ -6,11 +6,11 @@
 
 ## 课程内已有参考
 
-原始参考统一从 [ref/README.md](../references/README.md) 进入。该索引记录来源类别、用途、核验日期和可信度；[AutoResearch.md](../references/notes/AutoResearch.md) 与 [skills_ref.md](../references/notes/skills_ref.md) 是进一步探索的线索集，不代表其中每项内容都已成为课程结论。
+原始参考统一从 [references/README.md](../references/README.md) 进入。该索引记录来源类别、用途、核验日期和可信度；[AutoResearch.md](../references/notes/AutoResearch.md) 与 [skills_ref.md](../references/notes/skills_ref.md) 是进一步探索的线索集，不代表其中每项内容都已成为课程结论。
 
 面向 16 次课的实际选读见 [逐课参考阅读清单](./reading-list.md)。该清单采用“正式书目 + 课堂案例”双层结构：经典书籍选章、同行评议论文、共识报告和正式规范构成主干；GitHub、厂商文章、协议文档、大学课程讲义、演讲稿和转载讲义只作版本化案例。每课控制在 3-4 项，通常只要求 1 项核心阅读。
 
-英文原典配中文阅读范围、术语和问题。课程鼓励学生用 AI 快速建立阅读地图，但必须回到原文定位证据、审计偏差并人工定稿；AI 摘要和未核验引文不构成课程证据。`ref/research-method/` 的转载材料在确认来源与分发许可前只供备课。
+英文原典配中文阅读范围、术语和问题。课程鼓励学生用 AI 快速建立阅读地图，但必须回到原文定位证据、审计偏差并人工定稿；AI 摘要和未核验引文不构成课程证据。`references/library/research-method/` 的转载材料在确认来源与分发许可前只供备课。
 
 ## 可写入申请表的课程资源
 

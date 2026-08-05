@@ -11,7 +11,7 @@ from pptx.util import Cm, Pt
 
 PROJECT = Path(__file__).resolve().parents[1]
 TEMPLATE = PROJECT / "sources" / "交大模版.pptx"
-OUT = PROJECT / "exports" / "trial_lecture_ai_research_methods_sjtu_visual_full_20260614.pptx"
+OUT = PROJECT.parent / "trial_lecture_ai_research_methods_sjtu_visual_full_20260614.pptx"
 
 SJTU_RED = RGBColor(198, 18, 35)
 DARK = RGBColor(43, 52, 68)

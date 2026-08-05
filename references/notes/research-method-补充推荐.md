@@ -5,11 +5,11 @@
 
 > 本表是对 `research-method/` 资料库与选目分析的**库外补充**，重点填补选目分析暴露的空白（尤其第 9-13 课 AI/Agent 核心几乎无对应材料）。
 >
-> **证据标准声明**：以下作者/年份/会议为**推荐线索**，非已核验事实。按项目规则，AI 输出不构成证据，关键结论须回源核验。快速演进领域（LLM Agent、AutoML）的标题与会议可能变动，授课前必须回源确认确切出处与最新版本。分级（ref/README.md）：A 论文/上游仓库/官方文档，B 书籍/高质量二手，C 博客/社媒。
+> **证据标准声明**：以下作者/年份/会议为**推荐线索**，非已核验事实。按项目规则，AI 输出不构成证据，关键结论须回源核验。快速演进领域（LLM Agent、AutoML）的标题与会议可能变动，授课前必须回源确认确切出处与最新版本。分级（`references/README.md`）：A 论文/上游仓库/官方文档，B 书籍/高质量二手，C 博客/社媒。
 
 ## 第 1 课 AI 辅助科研导论 / 八阶段研究链路
 
-- **Wang et al. 2023, Scientific discovery in the age of AI**（Nature 综述）— A — 已在 `ref/papers/`，作八阶段与 AI-for-research 概念锚点。
+- **Wang et al. 2023, Scientific discovery in the age of AI**（Nature 综述）— A — 已在 `references/library/papers/`，作八阶段与 AI-for-research 概念锚点。
 - **Hamming, You and Your Research**（1986 报告）— B — 库内 `科研经验集锦` 已含讲稿；选题/品味/远见经典，可作第 1 与第 6 课引子。
 - **Simon, The Sciences of the Artificial**（1969/1996）— B — CS/AI"人工物"方法论奠基，契合阶段 1 对人工现象的处理。
 
@@ -60,16 +60,16 @@
 
 - **Huang et al., MLAgentBench**（2024）— A — ML 实验自动化 Agent 基准，对应"配置扫描→评估→保留/丢弃→重复"。
 - **Khalsa 等, DSPy**（ICLR 2024）— A — 程序化 LM 流水线与自动评估，契合自主工作流与 eval 机制。
-- **Sakana AI Scientist / AI Scientist v2**（已在 `ref/AutoResearch.md` 上游入口）— A — 端到端自动化科研循环案例。
+- **Sakana AI Scientist / AI Scientist v2**（已在 `references/notes/AutoResearch.md` 上游入口）— A — 端到端自动化科研循环案例。
 - **Hutter et al., AutoML: Methods, Systems, Challenges**（2019 书）— B — 超参/配置扫描历史方法背景。
 - 库内：Model Log（四星）仅覆盖指标曲线，循环与自动化须库外补。
 
 ## 第 12 课 Agent/Skill 逻辑 / 自主 Research Workflow 设计
 
 - **Anthropic, Building Effective Agents**（同第 10 课）— A — 任务契约、工具、上下文、权限的工程框架，强烈推荐作本课骨架。
-- **MCP 官方文档**（modelcontextprotocol.io，已在 `ref/README` 上游）— A — 工具/上下文协议。
+- **MCP 官方文档**（modelcontextprotocol.io，已在 `references/README.md` 上游）— A — 工具/上下文协议。
 - **Wang et al., AutoGen**（Microsoft, 2023）/ **Hong et al., MetaGPT**（2024）— A — 多 Agent 协作框架，作"自主工作流设计"对比案例。
-- 库内：`ref/skills_ref.md` 已索引 Skills/工作流案例池。
+- 库内：`references/notes/skills_ref.md` 已索引 Skills/工作流案例池。
 
 ## 第 13 课 工作流评价 / 失败复盘（验证门）
 
@@ -105,5 +105,5 @@
 ## 风险
 
 - 以下条目为推荐线索，非已核验事实。SWE-bench、MLAgentBench、DSPy、AutoGen、MetaGPT、Anthropic 博客属快速演进领域，标题与会议可能变动，授课前必须回源核验确切出处与最新版本。
-- 按 `ref/README.md` 分级，论文/上游仓库/官方文档为 A 级可直接依据；书籍与博客次之。建议先回源再纳入 `ref/README.md` 或 `ai-research-workflow-course/reference-analysis.md`。
+- 按 `references/README.md` 分级，论文/上游仓库/官方文档为 A 级可直接依据；书籍与博客次之。建议先回源再纳入 `references/README.md` 或 `course/reference-analysis.md`。
 - 本文件未跟踪、未提交；如需纳入版本管理，提交前确认未引入凭据或敏感路径。

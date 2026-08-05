@@ -5,23 +5,31 @@ applied/
 /raw
 /results
 
-# 克隆的外部参考资料库（自带 .git，避免被作为子模块或散文件纳入）
-/references/library/research-method/
-
-# references/library/ 下的外部原件（论文/书/演讲/视觉模板），仅由 README 作索引，不入版本管理
-/references/library/papers/
-/references/library/books/
-/references/library/talk/
-/references/library/template/
+# references/library/ 下的外部原件与克隆库，仅由 references/README.md 作索引
+/references/library/
 
 # 本地渲染、模板审计、解包、layout、QA 缓存与中间产物
 .work/
 /.tmp/
 /.ppt_master_inputs/
 node_modules/
+.venv/
+__pycache__/
+*.pyc
 
 # inspection / layout 自动产物
 *.ndjson
+
+# 本机凭据注入与客户端配置
+.env
+.env.*
+!.env.example
+/.claude/settings.local.json
+/.opencode/.gitignore
+
+# Office / LibreOffice 临时锁文件
+~$*
+.~lock.*#
 
 # macOS 元数据
 .DS_Store

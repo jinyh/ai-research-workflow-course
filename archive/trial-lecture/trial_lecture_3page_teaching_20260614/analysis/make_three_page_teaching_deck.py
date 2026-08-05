@@ -9,7 +9,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 PROJECT = Path(__file__).resolve().parents[1]
-GENERATED = PROJECT / "generated"
+REPO = Path(__file__).resolve().parents[4]
+GENERATED = REPO / ".work" / "trial-lecture" / PROJECT.name / "generated"
 PROMPTS = PROJECT / "prompts"
 QA = PROJECT / "qa"
 
@@ -308,7 +309,7 @@ def main():
         "size": [W, H],
         "style": "SJTU red, white academic classroom, image-type slide",
         "editable_scope": "图片型 PPTX；页面内容作为整页图片插入，不能逐字编辑。",
-        "source_outline": "ai-research-workflow-course/trial-lecture-outline.md",
+        "source_outline": "archive/trial-lecture/trial-lecture-outline.md",
     }
     (QA / "qa_record.json").write_text(json.dumps(qa, ensure_ascii=False, indent=2), encoding="utf-8")
 

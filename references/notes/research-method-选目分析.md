@@ -1,7 +1,7 @@
 # research-method 资料库全文通读选目（星级版）
 
 最后核验：2026-07-29
-来源：`github.com/secdr/research-method`（已克隆至 `ref/research-method/`，自带 .git，已加入 `.gitignore`）
+来源：`github.com/secdr/research-method`（已克隆至 `references/library/research-method/`，自带 .git，已加入 `.gitignore`）
 
 ## 方法与星级标准
 
@@ -9,13 +9,13 @@
 - 抽取文本存于 `/tmp/rm_txt/`（临时，不纳入仓库）。
 - 课程：上海交通大学研究生课"智能科研方法"，八阶段研究链路（1问题定义→2第一性原理→3机制假设→4外部输入摄取→5证据整理→6研究判断→7原型验证→8回写与表达），16 课，CS/AI 研究生，AI 增强科研方法课（非论文写作课、非工具展示课）。课程"提交"指研究门材料（第 6/9/13/16 课），非期刊投稿。
 - 星级：★★★★★ 直接对应某课核心科研动作且契合 CS/AI；★★★★ 明显对应且内容扎实；★★★ 部分对应或方向略偏但有方法价值；★★ 边缘/仅通识；★ 与课程方法论无关。
-- 级别（ref/README.md 分级）：A 官方/论文/上游；B 高质量二手；C 社媒/博客/聚合。本库整体 B/C，关键结论须回源，不构成课程直接证据。
+- 级别（`references/README.md` 分级）：A 官方/论文/上游；B 高质量二手；C 社媒/博客/聚合。本库整体 B/C，关键结论须回源，不构成课程直接证据。
 
 ## 总览统计
 
 - 共 94 个文件，去重后 92 个独立条目（沈向洋/华刚读论文、Collected Advice 各有两份基本相同的副本，合并为一条）。
 - ★★★★★ 16 篇 · ★★★★ 18 篇 · ★★★ 30 篇 · ★★ 18 篇 · ★/失败 10 篇。
-- 覆盖集中在第 4、6、14、15 课；**第 9-13 课（baseline、可复现、Agent 工作流、实验自动化、评价复盘）几乎无对应材料**——课程 AI/Agent 核心仍需以 `ref/papers/`、`ref/AutoResearch.md`、`ref/skills_ref.md` 为准。
+- 覆盖集中在第 4、6、14、15 课；**第 9-13 课（baseline、可复现、Agent 工作流、实验自动化、评价复盘）几乎无对应材料**——课程 AI/Agent 核心仍需以 `references/library/papers/`、`references/notes/AutoResearch.md`、`references/notes/skills_ref.md` 为准。
 
 ## ★★★★★ 直接对应核心动作（16 篇）
 
@@ -157,7 +157,7 @@
 - **第 5 课 综述/证据地图/空白**：钱志云脑洞(★★★★★,空白范式)、Web of Science(★★★,被引检索)、Stanford Unit6(★★★★,综述文体)。
 - **第 6 课 问题定义/第一性原理/问题门**：胡晓峰科学问题(★★★★★)、How to Look for Ideas(★★★★★)、霍强(★★★★★)、邱锡鹏(★★★★★,兼)、Whitesides(★★★★★,outline 即研究计划)、陈耀(★★★★)、如何撰写高水平博士论文(★★★,创新四法)、学术论文撰写与发表经验谈(★★★,选题)。
 - **第 7 课 机制假设**：Coming up with New Ideas Raskar(★★★★★)、如何撰写高水平博士论文(★★★,类比/假设修改)。
-- **第 9-13 课（baseline/Agent/实验自动化/评价复盘）**：**几乎无对应材料**。仅 Algorithm2e(★★★★,第 10 课伪代码)、Model Log(★★★★,第 11 课指标曲线)、图表制作(★★★★,第 11 课兼)。AI/Agent 核心仍以 `ref/papers/`、`ref/AutoResearch.md`、`ref/skills_ref.md` 为准。
+- **第 9-13 课（baseline/Agent/实验自动化/评价复盘）**：**几乎无对应材料**。仅 Algorithm2e(★★★★,第 10 课伪代码)、Model Log(★★★★,第 11 课指标曲线)、图表制作(★★★★,第 11 课兼)。AI/Agent 核心仍以 `references/library/papers/`、`references/notes/AutoResearch.md`、`references/notes/skills_ref.md` 为准。
 - **第 14 课 论文式表达**：Whitesides、赵鑫快速入门、邱锡鹏、SPJ、Gopen&Swan、Stanford Unit5、Freeman(均★★★★★)；Writing your first、protec_good_practice、How to Write and Publish、科研论文特点构思、图表制作、论文写作与投稿任胜利、熊辉、Brittman、Science Research Writing、Stanford Unit1/2/3/4、如何写好 SCI、如何快速撰写 SCI、SCI 文章撰写技巧(均★★★★)。
 - **第 15 课 同行评审**：施柏鑫 CVPR、魏秀参 rebuttal、Stanford Unit8(均★★★★★)；张贤达审稿流程、叶茫返修、protec_good_practice(均★★★★)；Responses to Referee#2(★★★,真实范例)、Collected Advice(★★★)、Elsevier 投稿指南(★★★)。
 - **第 16 课 最终展示**：懒人 Oral Video(★★★)、Freeman(★★★★★,兼)、Stanford Unit1(★★★★,兼)。
@@ -169,5 +169,5 @@
 3. 中文 SCI 攻略类（如何写好 SCI、SCI 论文撰写与发表、如何快速撰写、经验分享、SCI 文章撰写技巧）内容高度重叠，夹带过时口号（"IF 至上""引用潜在审稿人论文"），须按课程"不唯 SCI、AI 输出需核验"口径裁剪，只取片段作案例。
 4. 内容失真/抽取失败 4 类须标注：`How to Publish a Paper in the Top Journal`(编码损坏)、`SCI 论文撰写与发表(think 版)`(标题失真，实为基金函评)、`科技英文罗塞塔石碑`(实为推荐信邮件)、`科技英语写作句型`与`撰写基金申请书李红谊`(抽取为空)。
 5. 时效性：WoS/EES 平台细节、2021 基金统计、CVPR 2019 rebuttal 政策属易变信息，授课前须重新核验。
-6. 级别：本库整体 B/C，作背景阅读与线索，不构成课程证据；关键教学判断在 `ai-research-workflow-course/reference-analysis.md` 记录来源与限制。
-7. 版权：原件多为转载 PDF（知乎/期刊/PPT），`ref/` 默认只读用于备课；分发给学生须先确认授权。
+6. 级别：本库整体 B/C，作背景阅读与线索，不构成课程证据；关键教学判断在 `course/reference-analysis.md` 记录来源与限制。
+7. 版权：原件多为转载 PDF（知乎/期刊/PPT），`references/library/` 默认只读用于备课；分发给学生须先确认授权。

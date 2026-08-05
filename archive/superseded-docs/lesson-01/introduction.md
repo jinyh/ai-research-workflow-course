@@ -5,13 +5,13 @@
 状态：历史稿（已被现行第 1 课讲义、教案和逐页内容母稿替代）
 变更记录：
 - v1.1.0 (2026-07-07): PPT 每页升级为六字段（标题/要点/时长/开场句/展开/互动/过渡）；时间轴页码-时间-活动三者一致；新增页级验收（通用+关键页专项）；各部分加独立验收清单；讲解方案节改为整体节奏控制
-- v1.0.0 (2026-07-07): 初版。基于 projects/备课规划.md 第 1 课骨架扩展为可直接授课的教学包
+- v1.0.0 (2026-07-07): 初版。基于 `lessons/备课规划.md` 第 1 课骨架扩展为可直接授课的教学包
 ---
 
 # 第 1 课 | AI 辅助科研导论与八阶段研究链路 — 详细教学包
 
 > [!WARNING]
-> 本文件保留 2026-07-07 的 20 页方案用于历史追踪，其中工具、研究门课次和课堂节奏已不再代表现行设计。不得据此制作新 PPT 或布置课堂任务；现行依据见 [教师教案](./teaching-plan.md)、[学生讲义](./handout.md) 与 [逐页内容母稿](./slides.md)。
+> 本文件保留 2026-07-07 的 20 页方案用于历史追踪，其中工具、研究门课次和课堂节奏已不再代表现行设计。不得据此制作新 PPT 或布置课堂任务；现行依据见 [教师教案](../../../lessons/lesson-01/teaching-plan.md)、[学生讲义](../../../lessons/lesson-01/handout.md) 与 [逐页内容母稿](../../../lessons/lesson-01/slides.md)。
 
 ## 适用课次与定位
 
@@ -25,7 +25,7 @@
 
 ## 本课目标
 
-对齐 `projects/备课规划.md` 第 1 课教学目标：
+对齐 `lessons/备课规划.md` 第 1 课教学目标：
 
 1. 学生理解课程定位：不是 AI 工具课，是有结构的科研方法课
 2. 学生能说出八阶段研究链路各阶段名称和逻辑
@@ -43,7 +43,7 @@
 - [ ] 课程 PPT（按本文档"课堂 PPT 详细提纲"制作，约 20 页）
 - [ ] 示范论文 PDF：*Attention Is All You Need*（Vaswani et al., 2017），用于拆解演示
 - [ ] 课堂拆解用短论文 1 篇（可选：沿用 Transformer，或按学生方向另选 1 篇本组短论文）
-- [ ] starter-template.md 介绍材料（对齐 `ai-research-workflow-course/starter-template.md`）
+- [ ] starter-template.md 介绍材料（对齐 `course/starter-template.md`）
 - [ ] 选题方向引导材料：5-8 个关键词方向（教师按本组领域填写，见"选题方向清单"节）
 - [ ] Deep Research vs STORM 1 页对比引子（只作引子，不展开工具教程）
 - [ ] 八阶段链路图 A3 海报或电子版（用于 P7 和课后参考）
@@ -725,7 +725,7 @@ AI 已经进入科研的每个环节
 
 ### 预习
 
-5. 读 `ai-research-workflow-course/ethics-and-compliance-template.md`，准备第 2 课建立 AI 使用记录和伦理清单。
+5. 读 `course/ethics-and-compliance-template.md`，准备第 2 课建立 AI 使用记录和伦理清单。
 
 ### 提交
 
@@ -776,11 +776,11 @@ AI 已经进入科研的每个环节
 
 ### 内部
 
-- [备课规划.md](../备课规划.md)：第 1 课骨架（L62-96）、Deep Research vs STORM 嵌入点（L44）、标准输出格式（L844-874）、外部资料索引（L755-828）
-- [syllabus.md](../../course/syllabus.md)：八阶段定义（L29-39）、四研究门（L70-75）、模块一说明（L100-111）
-- [assessment.md](../../course/assessment.md)：考核四维度（L16-21）、研究门条件（L27-75）
-- [starter-template.md](../../course/starter-template.md)：第 1 周使用要求、最小文件结构
-- [trial-lecture-outline.md](../../course/trial-lecture-outline.md)：P5-P7（课程定位、八阶段总图、Transformer 案例可复用素材）
+- [备课规划.md](../../../lessons/备课规划.md)：第 1 课骨架（L62-96）、Deep Research vs STORM 嵌入点（L44）、标准输出格式（L844-874）、外部资料索引（L755-828）
+- [syllabus.md](../../../course/syllabus.md)：八阶段定义（L29-39）、四研究门（L70-75）、模块一说明（L100-111）
+- [assessment.md](../../../course/assessment.md)：考核四维度（L16-21）、研究门条件（L27-75）
+- [starter-template.md](../../../course/starter-template.md)：第 1 周使用要求、最小文件结构
+- [trial-lecture-outline.md](../../trial-lecture/trial-lecture-outline.md)：P5-P7（课程定位、八阶段总图、Transformer 案例可复用素材）
 
 ### 外部（备课规划"外部资料索引"已列，本包引用其用途）
 

@@ -1,10 +1,11 @@
 ---
-版本：v1.0.1
-最后更新：2026-07-30
+版本：v1.0.2
+最后更新：2026-08-05
 适用课次：第 1 课
 文档类型：教师文献精读卡集
 状态：原文定位已完成；待教师复核与定稿
 变更记录：
+- v1.0.2 (2026-08-05): 更新项目重组后的本地参考资料路径
 - v1.0.1 (2026-07-30): 区分自动文本定位与教师人工复核，删除与授课无关的模型整合过程说明
 - v1.0.0 (2026-07-30): 按 reading-list.md「AI 辅助经典阅读协议」生成第 1 课涉及 8 份文献的精读卡（Simon Ch.5、Hamming「You and Your Research」、Wang 2023、Lu 2026、Gottweis 2026、Ghareeb 2026、Hao 2026、Tao ICM 2026）。
 ---
@@ -23,14 +24,14 @@
 
 | # | 文献 | 本地原件 | 第 1 课角色 |
 |---|---|---|---|
-| 1 | Simon《人工科学》3rd ed. Ch.5 | ref/books/Simon_...3rd_ed.pdf | 核心阅读：问题—目标—约束—评价 |
-| 2 | Hamming「You and Your Research」(Ch.30) | ref/books/Hamming_1997_...pdf | 任选：重要问题/研究品味 |
-| 3 | Wang et al. 2023 综述 | ref/papers/s41586-023-06221-2.pdf | 任选：AI 介入科学发现环节 |
-| 4 | Lu et al. 2026 AI Scientist | ref/papers/s41586-026-10265-5.pdf | slides P03 钩子 |
-| 5 | Gottweis et al. 2026 Co-Scientist | ref/papers/s41586-026-10644-y.pdf | slides P04 钩子 |
-| 6 | Ghareeb et al. 2026 Robin | ref/papers/s41586-026-10652-y.pdf | slides P04 钩子 |
-| 7 | Hao et al. 2026 影响与收缩 | ref/papers/s41586-025-09922-y.pdf | slides P05 钩子 |
-| 8 | Tao, Mathematics in the Age of AI (ICM 2026) | ref/talk/age-of-ai-icm-2026.pdf | 课堂案例 |
+| 1 | Simon《人工科学》3rd ed. Ch.5 | `references/library/books/Simon_...3rd_ed.pdf` | 核心阅读：问题—目标—约束—评价 |
+| 2 | Hamming「You and Your Research」(Ch.30) | `references/library/books/Hamming_1997_...pdf` | 任选：重要问题/研究品味 |
+| 3 | Wang et al. 2023 综述 | `references/library/papers/s41586-023-06221-2.pdf` | 任选：AI 介入科学发现环节 |
+| 4 | Lu et al. 2026 AI Scientist | `references/library/papers/s41586-026-10265-5.pdf` | slides P03 钩子 |
+| 5 | Gottweis et al. 2026 Co-Scientist | `references/library/papers/s41586-026-10644-y.pdf` | slides P04 钩子 |
+| 6 | Ghareeb et al. 2026 Robin | `references/library/papers/s41586-026-10652-y.pdf` | slides P04 钩子 |
+| 7 | Hao et al. 2026 影响与收缩 | `references/library/papers/s41586-025-09922-y.pdf` | slides P05 钩子 |
+| 8 | Tao, Mathematics in the Age of AI (ICM 2026) | `references/library/talk/age-of-ai-icm-2026.pdf` | 课堂案例 |
 
 ---
 
@@ -225,7 +226,7 @@ AI 已成为跨学科科学发现全过程（数据→表示→假设→实验�
 **(1) 完整书目信息**
 Lu, C. et al. "Towards end-to-end automation of AI research." *Nature* **651**, 914–919 (2026). DOI: 10.1038/s41586-026-10265-5. Received 8 July 2025；Accepted 11 February 2026；Published online 25 March 2026. Open Access (CC BY 4.0). 机构：Sakana AI（东京）、Oxford FLAIR、UBC、Vector Institute。本地 PDF 9 页。
 
-> 卷期核验：PDF 页眉逐页显示「Nature | Vol 651 | 26 March 2026」，页码 914–919，与 slides P03、ref/README 一致。Wang 2023 为卷 620，本篇为卷 651，二者不同。
+> 卷期核验：PDF 页眉逐页显示「Nature | Vol 651 | 26 March 2026」，页码 914–919，与 slides P03、`references/README.md` 一致。Wang 2023 为卷 620，本篇为卷 651，二者不同。
 
 **(2) 来源类型与证据角色**
 同行评审 Nature 研究论文（Open Access），附 Supplementary Information、代码/数据可用性声明与 IRB 审批（H24-02652）。第 1 课 slides P03 课堂钩子——端到端 AI 科研自动化管线案例，对应八阶段「原型验证→回写与表达」自动化一极，同时作科研伦理与可追溯性反向锚点。
@@ -271,7 +272,7 @@ The AI Scientist 管线（ideation→experimentation→write-up→review）已�
 1. 媒体式过度概括：易被转述为「AI 已具备独立科研能力」或「AI 论文被顶级会议接收」——原文不支持（workshop、首轮、1/3、未达主会）。
 2. 自动化程度过度概括：存在「人工筛选 3 篇提交」环节，表述为「全自主无人工」则构成遗漏。
 3. 评审能力过度概括：Table 1 仅说明 NeurIPS 2021 consistency 上与人类相当，不能外推为「自动评审可替代人类评审」。
-4. **AI 自身偏差实例（卷号混淆）**：本卡生成 Agent 在偏差审计初稿中误判「reading-list/slides 所写卷号为 620、应更正为 651」。经整合者核对，slides P03 实际写「Nature 651, 914-919」、ref/README 与 PDF 页眉均为 651——Agent 将 Wang 2023（卷 620）与 Lu 2026（卷 651）混淆，把不存在的 slides 错误当成了真实错误。此为 AI 偏差的典型实例（记忆混淆 + 误报来源错误），已就地修正，保留作教学案例：AI 不仅会过度概括，还可能虚构「需要更正的错误」。
+4. **AI 自身偏差实例（卷号混淆）**：本卡生成 Agent 在偏差审计初稿中误判「reading-list/slides 所写卷号为 620、应更正为 651」。经整合者核对，slides P03 实际写「Nature 651, 914-919」、`references/README.md` 与 PDF 页眉均为 651——Agent 将 Wang 2023（卷 620）与 Lu 2026（卷 651）混淆，把不存在的 slides 错误当成了真实错误。此为 AI 偏差的典型实例（记忆混淆 + 误报来源错误），已就地修正，保留作教学案例：AI 不仅会过度概括，还可能虚构「需要更正的错误」。
 5. 证据强度：1 篇过线、单次、单领域——不构成 stable，仅作存在性证据。
 - 未核验项：70%/32% 两接收率官方来源（引用 [38][39]）授课前应另行核验，本卡如实标「未核验」。
 
@@ -467,7 +468,7 @@ AI 工具采用对个体科学家的产出、引用与职业发展有何影响�
 ## 精读卡 8：Tao「Mathematics in the Age of AI」(ICM 2026)
 
 **(1) 完整书目信息**
-Terence Tao（陶哲轩，UCLA）. "Mathematics in the Age of AI". International Congress of Mathematicians 2026 (ICM 2026) 公开演讲，讲稿日期 2026 年 7 月 24 日。类型：公开演讲幻灯讲稿（slide transcript），非正式出版物。无 DOI、ISBN、期刊编号。本地存档 `ref/talk/age-of-ai-icm-2026.pdf`（52 页）。在课程中为第 1 课课堂案例（非「已核验事实来源」）。
+Terence Tao（陶哲轩，UCLA）. "Mathematics in the Age of AI". International Congress of Mathematicians 2026 (ICM 2026) 公开演讲，讲稿日期 2026 年 7 月 24 日。类型：公开演讲幻灯讲稿（slide transcript），非正式出版物。无 DOI、ISBN、期刊编号。本地存档 `references/library/talk/age-of-ai-icm-2026.pdf`（52 页）。在课程中为第 1 课课堂案例（非「已核验事实来源」）。
 
 **(2) 来源类型与证据角色**
 会议公开演讲，作者本人幻灯讲稿。未经同行评议、未经编辑出版流程，属「权威研究者个人观点陈述」。作课堂案例，用于分析 AI 使用层级、证明消化链、限制披露与演讲叙事结构。能力数据（First Proof 第二批结果、算力成本等）属易变信息，不作课程已核验结论。在课程证据标准中可作「线索」，不可作「稳定结论」直接证据。

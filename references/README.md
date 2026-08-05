@@ -2,7 +2,7 @@
 
 最后核验：2026-08-04（补充来源角色规则、交大校级 AI 规范入口，并核验 Nature Careers 工具指南原件）
 
-`ref/` 保存原始参考和备课线索，默认只读。课程结论不直接以本目录中的汇总文字为依据；引用前应回到原始论文、官方文档、课程主页或上游仓库核验。
+`references/notes/` 保存备课分析与核验记录，`references/library/` 保存默认不纳入 Git 的原始参考。课程结论不直接以本目录中的汇总文字为依据；引用前应回到原始论文、官方文档、课程主页或上游仓库核验。
 
 ## 来源分级
 
@@ -95,7 +95,7 @@
 
 收录边界：
 - 收：他人讲座 PPT、演讲笔记、公开 talk 整理稿等外部参考素材。
-- 不收：课程自己的正式授课 PPT 母稿（归 `projects/lesson-NN-slides.*`）；试讲材料（归 `final/`）；学校视觉模板（归 `template/`）。
+- 不收：课程自己的正式授课 PPT 母稿（归 `lessons/lesson-NN/slides.*`）；试讲材料（归 `archive/trial-lecture/`）；学校视觉模板原件（归 `references/library/template/`）。
 - 与 `research-method/` 的边界：`research-method/` 是整体克隆库（含 "how to presentation" 等），不拆入 `talk/`，靠本索引"克隆资料库课次映射"表定位。
 
 | 文件 | 讲者/来源 | 主题 | 适用课次 | 级别 | 时效与核验说明 |

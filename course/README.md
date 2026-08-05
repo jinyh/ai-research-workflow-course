@@ -68,7 +68,7 @@ OpenCode 从第 1 课起作为主要课堂工作平台。课程通过现成 Agen
 - [syllabus.md](./syllabus.md)：16 次课教学安排（含八阶段研究链路阶段标注）
 - [course-proposal.md](./course-proposal.md)：新开课立项说明草案
 - [application-form-draft.md](./application-form-draft.md)：对照 SJTU 研究生课程开设申请表的中英文填报草案
-- [reference-analysis.md](./reference-analysis.md)：`ref/` 资料、培养方案和外部参考的提炼依据（含方法论框架选择依据）
+- [reference-analysis.md](./reference-analysis.md)：`references/` 资料、培养方案和外部参考的提炼依据（含方法论框架选择依据）
 - [assessment.md](./assessment.md)：考核方式、评分标准和验收条件（含门条件）
 - [assignments.md](./assignments.md)：项目里程碑与四次阶段性交付（含研究门条件）
 - [starter-template.md](./starter-template.md)：早期研究脚手架模板（第 1-6 课为主，第 7-8 课继续完善）
@@ -79,6 +79,6 @@ OpenCode 从第 1 课起作为主要课堂工作平台。课程通过现成 Agen
 - [第 1 课正式讲义](../lessons/lesson-01/handout.md)：面向学生、可独立阅读的第一讲课程内容
 - [第 1 课教师教案](../lessons/lesson-01/teaching-plan.md)：90 分钟课堂组织、演示和形成性评价
 - [逐课教学材料规则](../lessons/README.md)：正式讲义、教师教案、课堂 PPT、活动材料与试讲材料的职责边界
-- [trial-lecture-outline.md](./trial-lecture-outline.md)：20 分钟开课评审试讲历史大纲，不作为正式讲义或正式课堂 PPT
+- [试讲材料归档](../archive/trial-lecture/README.md)：全部开课评审试讲版本、逐页大纲、内容源和判断记录
 - [第 1 课内容入口](../lessons/lesson-01/README.md)：第 1 课全部材料的导航、文件关系与阅读路径
 - [第 2 课内容入口](../lessons/lesson-02/README.md)：第 2 课全部材料的导航、文件关系与阅读路径

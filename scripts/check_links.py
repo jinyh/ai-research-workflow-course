@@ -1,64 +1,62 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Markdown 内部链接有效性检查（只读）。
+"""检查 Git 管理范围内 Markdown 的内部链接与现行旧路径（只读）。
 
-扫描跟踪范围内的 .md，验证 [text](rel.md) 与 [text](<rel.md>) 内部链接和锚点，
-跳过外部 URL 与 gitignore 排除路径。用于大改版或跨文档调整后的链接审查。
-
-    python3 scripts/check_links.py
-
-退出码：发现断链 → 1；否则 0。
+退出码：跟踪目标断链或现行文档残留旧目录根时为 1，否则为 0。
+`references/library/` 是本地外部资料库；其目标缺失只告警，不导致失败。
 """
 
 from __future__ import annotations
 
+import os
 import re
+import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 REPO = Path(__file__).resolve().parent.parent
-
-# 链接检查范围：跟踪目录 + 根级权威文件
-SCOPE_DIRS = ["course", "lessons", "docs", "references/notes"]
-SCOPE_FILES = ["README.md", "AGENTS.md", "references/README.md"]
-
-# gitignore 或项目口径约定不参与检查的路径前缀（外部克隆库、本地缓存等）
-EXCLUDE_PREFIXES = (
-    ".git/",
-    ".work/",
-    ".local/",
-    ".agents/",
-    ".opencode/",
-    ".claude/",
-    "archive/",
-    "references/library/papers/",
-    "references/library/books/",
-    "references/library/talk/",
-    "references/library/template/",
-    "references/library/research-method/",
-)
+LOCAL_LIBRARY = REPO / "references" / "library"
 
 LINK_RE = re.compile(r"!?\[([^\]]*)\]\(([^)]+)\)")
 CODE_SPAN_RE = re.compile(r"`[^`]+`")
+LEGACY_RE = re.compile(
+    r"(?<![A-Za-z0-9_.-])(?:ref/|projects/|final/|ai-research-workflow-course/|"
+    r"docs/archive/|\.tmp/|\.ppt_master_inputs/)"
+)
+LEGACY_EXCLUDED = {"docs/project-reorganization-proposal.md"}
 
 
-def is_excluded(path: Path) -> bool:
-    rel = path.relative_to(REPO).as_posix()
-    return any(rel.startswith(p) for p in EXCLUDE_PREFIXES)
+def is_within(path: Path, parent: Path) -> bool:
+    try:
+        path.relative_to(parent)
+        return True
+    except ValueError:
+        return False
 
 
-def iter_scope_md() -> list[Path]:
-    files: list[Path] = []
-    for d in SCOPE_DIRS:
-        for p in (REPO / d).rglob("*.md"):
-            if not is_excluded(p):
-                files.append(p)
-    for f in SCOPE_FILES:
-        p = REPO / f
-        if p.exists():
-            files.append(p)
-    return sorted(set(files))
+def tracked_markdown() -> list[Path]:
+    result = subprocess.run(
+        [
+            "git",
+            "ls-files",
+            "-z",
+            "--cached",
+            "--others",
+            "--exclude-standard",
+            "--",
+            "*.md",
+        ],
+        cwd=REPO,
+        check=True,
+        capture_output=True,
+    )
+    candidates = (
+        REPO / os.fsdecode(item)
+        for item in result.stdout.split(b"\0")
+        if item
+    )
+    return sorted(path for path in candidates if path.exists())
 
 
 def strip_code_spans(line: str) -> str:
@@ -66,79 +64,120 @@ def strip_code_spans(line: str) -> str:
 
 
 def headings_in(text: str) -> list[str]:
-    out = []
-    for ln in text.splitlines():
-        m = re.match(r"\s*(#{1,6})\s+(.*)", ln)
-        if m:
-            out.append(m.group(2).strip())
-    return out
+    headings = []
+    for line in text.splitlines():
+        match = re.match(r"\s*#{1,6}\s+(.*)", line)
+        if match:
+            headings.append(match.group(1).strip())
+    return headings
 
 
-def normalize_anchor(s: str) -> str:
-    return re.sub(r"[\s\-_#]", "", s).lower()
+def normalize_anchor(value: str) -> str:
+    return re.sub(r"[\W_]+", "", unquote(value), flags=re.UNICODE).lower()
 
 
-def check_links() -> tuple[list[str], list[str]]:
-    """返回 (断链列表, 锚点告警列表)。"""
+def parse_target(raw_target: str) -> tuple[str, str] | None:
+    target = raw_target.strip()
+    if target.startswith("<") and target.endswith(">"):
+        target = target[1:-1]
+    if not target or target.startswith("//"):
+        return None
+
+    parsed = urlsplit(target)
+    if parsed.scheme or parsed.netloc:
+        return None
+    return unquote(parsed.path), unquote(parsed.fragment)
+
+
+def check_links(files: list[Path]) -> tuple[list[str], list[str], list[str]]:
     broken: list[str] = []
-    anchor_warns: list[str] = []
-    for f in iter_scope_md():
+    anchor_warnings: list[str] = []
+    local_warnings: list[str] = []
+
+    for source in files:
         try:
-            text = f.read_text(encoding="utf-8")
-        except UnicodeDecodeError:
+            text = source.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError) as error:
+            broken.append(f"{source.relative_to(REPO)}  (无法读取：{error})")
             continue
-        for i, ln in enumerate(text.splitlines(), 1):
-            for _label, target in LINK_RE.findall(strip_code_spans(ln)):
-                target = target.strip()
-                if target.startswith("<") and target.endswith(">"):
-                    target = target[1:-1]
-                if not target or target.startswith(("http://", "https://", "mailto:", "ftp://")):
+
+        for line_number, line in enumerate(text.splitlines(), 1):
+            for _label, raw_target in LINK_RE.findall(strip_code_spans(line)):
+                parsed = parse_target(raw_target)
+                if parsed is None:
                     continue
-                path_part, _, anchor = target.partition("#")
-                if path_part == "":
-                    target_file = f  # 纯锚点，指向本文
-                else:
-                    target_file = (f.parent / path_part).resolve()
-                # 目标解析进排除路径（外部克隆库等）→ 跳过
-                try:
-                    rel_target = target_file.relative_to(REPO).as_posix()
-                except ValueError:
-                    rel_target = target_file.as_posix()
-                if any(rel_target.startswith(p) for p in EXCLUDE_PREFIXES):
+                path_part, anchor = parsed
+                target = source if not path_part else (source.parent / path_part).resolve()
+                location = f"{source.relative_to(REPO)}:{line_number}"
+
+                if path_part and not target.exists():
+                    message = f"{location}  →  {raw_target.strip()}  (文件不存在)"
+                    if is_within(target, LOCAL_LIBRARY):
+                        local_warnings.append(message)
+                    else:
+                        broken.append(message)
                     continue
-                if path_part != "" and not target_file.exists():
-                    rel_f = f.relative_to(REPO).as_posix()
-                    broken.append(f"{rel_f}:{i}  →  {target}  (文件不存在)")
-                    continue
-                if anchor:
+
+                if anchor and target.is_file() and target.suffix.lower() == ".md":
                     try:
-                        ttext = target_file.read_text(encoding="utf-8")
+                        target_text = target.read_text(encoding="utf-8")
                     except (OSError, UnicodeDecodeError):
                         continue
-                    norm = normalize_anchor(anchor)
-                    if norm and not any(
-                        norm in normalize_anchor(h) or normalize_anchor(h) in norm
-                        for h in headings_in(ttext)
-                    ):
-                        rel_f = f.relative_to(REPO).as_posix()
-                        anchor_warns.append(f"{rel_f}:{i}  →  {target}  (锚点未匹配到标题)")
-    return broken, anchor_warns
+                    normalized = normalize_anchor(anchor)
+                    available = {normalize_anchor(item) for item in headings_in(target_text)}
+                    if normalized and normalized not in available:
+                        anchor_warnings.append(
+                            f"{location}  →  {raw_target.strip()}  (锚点未匹配到标题)"
+                        )
+
+    return broken, anchor_warnings, local_warnings
+
+
+def check_legacy_paths(files: list[Path]) -> list[str]:
+    findings: list[str] = []
+    for source in files:
+        relative = source.relative_to(REPO).as_posix()
+        if relative.startswith("archive/") or relative in LEGACY_EXCLUDED:
+            continue
+        try:
+            text = source.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+        for line_number, line in enumerate(text.splitlines(), 1):
+            match = LEGACY_RE.search(line)
+            if match:
+                findings.append(
+                    f"{relative}:{line_number}  →  {match.group(0)}  (现行文档残留旧路径)"
+                )
+    return findings
+
+
+def print_group(title: str, findings: list[str]) -> None:
+    if not findings:
+        return
+    print(f"\n{title} {len(findings)} 处：")
+    for finding in findings:
+        print(f"      {finding}")
 
 
 def main() -> int:
-    broken, anchor_warns = check_links()
-    scanned = len(iter_scope_md())
-    if broken:
-        print(f"[FAIL] {len(broken)} 处断链（扫描 {scanned} 个 md）：")
-        for b in broken:
-            print(f"      {b}")
+    files = tracked_markdown()
+    broken, anchor_warnings, local_warnings = check_links(files)
+    legacy = check_legacy_paths(files)
+
+    if broken or legacy:
+        print(
+            f"[FAIL] 扫描 {len(files)} 个 Git 管理范围 Markdown："
+            f"{len(broken)} 处断链，{len(legacy)} 处现行旧路径"
+        )
     else:
-        print(f"[PASS] 内部链接有效（扫描 {scanned} 个 md）")
-    if anchor_warns:
-        print(f"\n[告警] {len(anchor_warns)} 处锚点未匹配到标题：")
-        for w in anchor_warns:
-            print(f"      ⚠ {w}")
-    return 1 if broken else 0
+        print(f"[PASS] {len(files)} 个 Git 管理范围 Markdown 的内部链接与目录口径有效")
+
+    print_group("[断链]", broken)
+    print_group("[旧路径]", legacy)
+    print_group("[锚点告警]", anchor_warnings)
+    print_group("[本地资料告警]", local_warnings)
+    return 1 if broken or legacy else 0
 
 
 if __name__ == "__main__":

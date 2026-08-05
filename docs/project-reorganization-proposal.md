@@ -1,5 +1,7 @@
 # 项目重整建议
 
+> 实施裁定（2026-08-05）：全部试讲版本及其内容源、讲述材料和判断记录进入 `archive/trial-lecture/`；逐页渲染、解包 XML 和完全重复缓存进入 `.work/`。该裁定取代下文对试讲内容“选取必要里程碑”的建议，PPT 视觉试制稿仍执行选择性归档。
+
 ## 1. 结论
 
 建议采用“分阶段结构迁移”的方式整理仓库：先修复规则入口并停止产生新的散落中间文件，再重组课程设计、逐课材料、正式交付、参考资料和历史归档。
@@ -76,7 +78,7 @@
 | `deliverables/` | 已通过内容、教学、技术和视觉检查的正式发布物 | 跟踪里程碑版本 |
 | `references/notes/` | 可追踪的参考资料分析、选目和核验记录 | 跟踪 |
 | `references/library/` | PDF、书籍、外部 PPT、克隆仓库等原始资料 | 默认不跟踪 |
-| `archive/` | 试讲、被替代文稿和有决策价值的 PPT 试制里程碑 | 选择性跟踪 |
+| `archive/` | 全部试讲内容、被替代文稿和有决策价值的 PPT 试制里程碑 | 试讲内容完整跟踪；其他历史材料选择性跟踪 |
 | `.work/` | 渲染、解包、layout、QA、临时脚本环境和缓存 | 不跟踪 |
 | `.local/` | 申请原件、外部数据链接、凭据相关本机配置 | 不跟踪 |
 
@@ -87,7 +89,7 @@
 | `ai-research-workflow-course/` | 迁到 `course/` |
 | `projects/lesson-NN-*` | 按课次迁到 `lessons/lesson-NN/`，使用稳定的短文件名 |
 | `projects/assets/lesson-NN/` | 迁到对应 `lessons/lesson-NN/assets/` |
-| `projects/trial_lecture_*` | 选取必要里程碑迁到 `archive/trial-lecture/`，生成过程进入 `.work/` |
+| `projects/trial_lecture_*` | 全部试讲版本、内容源、讲述材料和判断记录迁到 `archive/trial-lecture/`，可重建生成过程进入 `.work/` |
 | `final/` | 当前内容均为试讲历史材料，迁到 `archive/trial-lecture/`；不要继续用 `final` 表示历史稿 |
 | `ref/*.md` | 按主题迁到 `references/notes/` |
 | `ref/papers/`、`books/`、`talk/`、`template/`、`research-method/` | 迁到 `references/library/` 并继续忽略原始附件 |

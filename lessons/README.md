@@ -22,10 +22,10 @@
 
 | 文件 | 使用者 | 内容边界 |
 | --- | --- | --- |
-| `lesson-NN-teaching-plan.md` | 教师 | 教学目标、90 分钟流程、课堂活动、演示脚本、时间控制和课后复盘 |
-| `lesson-NN-handout.md` | 学生 | 可独立阅读的正式讲义，包含概念、方法、案例、练习、术语和延伸阅读 |
-| `lesson-NN-slides.*` | 课堂展示 | 中文为主的正式授课 PPT 及其可编辑源文件 |
-| `lesson-NN-activity-*` | 教师与学生 | 课堂练习、反馈卡、rubric、示例输入和参考答案 |
+| `teaching-plan.md` | 教师 | 教学目标、90 分钟流程、课堂活动、演示脚本、时间控制和课后复盘 |
+| `handout.md` | 学生 | 可独立阅读的正式讲义，包含概念、方法、案例、练习、术语和延伸阅读 |
+| `slides.md` / `slides.pptx` | 课堂展示 | 中文为主的逐页内容母稿与现行可编辑 PPT；尚无现行 PPT 时不放置过时占位文件 |
+| `activity-*` | 教师与学生 | 课堂练习、反馈卡、rubric、示例输入和参考答案 |
 
 ## 试讲材料
 
@@ -33,14 +33,14 @@
 
 ## 第 1 课
 
-- 待按整改口径同步的现有工作文件：[教师教案](./lesson-01/teaching-plan.md)｜[学生正式讲义](./lesson-01/handout.md)｜[逐页内容母稿](./lesson-01/slides.md) v1.1.7。
-- 既有视觉交付：[可编辑 PPTX](./lesson-01/slides.pptx)。该文件及后续视觉试制稿保留作比较基线；新一轮 PPTX 在内容、90 分钟节奏和逐页映射三道启动门通过前不定稿。
-- 历史稿：[详细教学包](./lesson-01/introduction.md)｜[旧详细讲义](./lesson-01/lecture-notes.md)。两者保留追踪 2026-07-07 的设计，不参与现行制作。
+- 现行材料与门控状态统一从 [第 1 课内容入口](./lesson-01/README.md) 查看，避免在两处重复维护版本号。
+- 旧 39 页 PPTX 已归入 [PPT 试制里程碑](../archive/ppt-experiments/lesson-01/2026-07-30-pre-gate-39-page-baseline/decision-record.md)；新一轮 PPTX 在内容、90 分钟教学和逐页映射三道门通过前不定稿。
+- 2026-07-07 的详细教学包与旧详细讲义已迁入 [被替代文稿归档](../archive/superseded-docs/lesson-01/)，不参与现行制作。
 - [教师文献精读卡集](./lesson-01/reading-notes.md)：第 1 课涉及 8 份文献按 AI 辅助阅读协议产出的精读卡；原文定位已完成，待教师复核与定稿。
 
 ## 第 2 课
 
-- 待按整改口径同步的现有工作文件：[教师教案](./lesson-02/teaching-plan.md)｜[学生正式讲义](./lesson-02/handout.md)｜[逐页内容母稿](./lesson-02/slides.md) v1.1.1。
+- 现行材料与门控状态统一从 [第 2 课内容入口](./lesson-02/README.md) 查看。
 - PPTX 尚未进入制作；先按 [备课规划](./备课规划.md) 完成内容、节奏和逐页映射三道启动门。
 
 ## 备课复盘

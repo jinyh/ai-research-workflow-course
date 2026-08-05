@@ -8,12 +8,9 @@
 | --- | --- | --- |
 | [handout.md](./handout.md) | 现行·学生讲义 | 面向学生、可脱离课堂独立阅读的正式讲义：概念、方法、案例、练习、术语、延伸阅读 |
 | [teaching-plan.md](./teaching-plan.md) | 现行·教师教案 | 90 分钟流程、PPT 执行索引、演示脚本、课堂产出验收、讲后复盘 |
-| [slides.md](./slides.md) | 现行·逐页母稿 v1.2.0（36 页） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
-| [slides.pptx](./slides.pptx) | 现行·视觉交付 | `slides.md` 的 PPTX 实现（当前为 39 页旧版，待同步到 36 页） |
+| [slides.md](./slides.md) | 现行·逐页母稿 v1.3.1（32 页） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
 | [keystone-design-spec.md](./keystone-design-spec.md) | 规范 | 关键页设计契约（反卡片、节奏、密度、主视觉来源、验收三问） |
 | [reading-notes.md](./reading-notes.md) | 现行·教师文献精读卡集 | 第 1 课 8 篇文献按 AI 辅助阅读协议产出的精读卡，原文定位已完成，待教师复核定稿 |
-| [introduction.md](./introduction.md) | 历史稿 | 2026-07-07 的 20 页方案，保留追踪设计，不参与现行制作 |
-| [lecture-notes.md](./lecture-notes.md) | 历史稿 | 与旧 20 页教学包配套，仅历史追踪 |
 | [assets/](./assets/) | 教学资产 | 论文图重绘、概念图等课堂用图 |
 
 ## 文件关系
@@ -21,8 +18,8 @@
 - **三件套（口径唯一）**：`handout.md`（教什么）↔ `teaching-plan.md`（怎么教）↔ `slides.md`（逐页屏显）。讲义是内容源，教案不替代讲义，slides 不自造事实。
 - `keystone-design-spec.md` → 指导 `slides.md` 关键页的视觉设计契约。
 - `reading-notes.md` → 为 `handout.md` 提供文献来源与精读卡。
-- `introduction.md` / `lecture-notes.md` 是历史稿，现行制作不以之为母版（见 `slides.md` 逐页映射表，每页可追溯到 `handout.md` 现行小节）。
-- `slides.pptx` 是 `slides.md` 的视觉交付，不是独立的事实来源。
+- 2026-07-07 的 `introduction.md` / `lecture-notes.md` 已移到 [被替代文稿归档](../../archive/superseded-docs/lesson-01/)，现行制作不以之为母版。
+- 旧 39 页 PPTX 已移到 [PPT 试制里程碑](../../archive/ppt-experiments/lesson-01/2026-07-30-pre-gate-39-page-baseline/decision-record.md)。当前没有与 32 页母稿一致的现行 `slides.pptx`。
 
 ## 关联课程文档
 
@@ -46,8 +43,8 @@
 | --- | --- |
 | 1. 课次目标 | ✅ 通过 |
 | 2. 内容门 | ✅ 通过（按 v2.1.0 对齐：90 分钟节奏表、首课文件清单、学习目标、课后阅读要素、链路草图产出） |
-| 3. 逐页映射门 | ✅ 通过（36 页逐页映射表，每页标注 handout 小节；初版待教师复核） |
-| 4. 90 分钟教学门 | 🔄 进行中（契约段已砍页 12→9 适配 8 分钟；桌面推演待续） |
+| 3. 90 分钟教学门 | 🔄 进行中（契约段已砍页 12→9 适配 8 分钟；桌面推演待续） |
+| 4. 逐页映射门 | ⏳ 待验收（32 页映射表已形成；须在 90 分钟教学门通过后复核页数与时间块） |
 | 5. PPT 制作 | 未开始（前四门通过后才做） |
 
 制作顺序与材料状态表见 [lessons/README.md](../README.md)。

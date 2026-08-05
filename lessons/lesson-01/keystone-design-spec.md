@@ -73,8 +73,7 @@
 
 ### P21｜八阶段让我们知道当前在修改什么（首轮，2026-08-04）
 
-- **构建脚本**：`.tmp/lesson01-p07-p14/build-p21.mjs`（复用 v2 pilot 的交大 template-starter.pptx 内容页 `items[1]`，命令式放置形状）
-- **产物**：`.tmp/lesson01-p21/lesson-01-P21-main-link.pptx`；渲染 `.tmp/lesson01-p21/render/slide-P21.png`
+- **构建记录**：原脚本与渲染产物已统一移入 `.work/ppt/lesson-01/`，不作为现行规范的可追踪依赖；当时复用 v2 pilot 的交大 template-starter.pptx 内容页 `items[1]`，命令式放置形状。
 - **主视觉**：八节点 navy pill 单线 + 节点间正向箭头 + 红色回退线 + 底部结论带；矢量重绘，非卡片矩阵
 - **验收三问**：
   1. 删主视觉后是否只剩卡片矩阵？否（仅余标题条与结论带）。✓
@@ -90,8 +89,7 @@
 
 ### P34｜“完成”之后还要检查 diff 和使用记录（首轮，2026-08-05）
 
-- **构建脚本**：`.tmp/lesson01-p07-p14/build-p34.mjs`（复用 template-starter `items[1]`，命令式放置形状）
-- **产物**：`.tmp/lesson01-p34/lesson-01-P34-diff-log.pptx`；渲染 `.tmp/lesson01-p34/render/slide-P34.png`（artifact-tool）+ `lesson-01-P34-diff-log.png`（LibreOffice 重开）
+- **构建记录**：原脚本与 artifact-tool / LibreOffice 渲染产物已统一移入 `.work/ppt/lesson-01/`；当时复用 template-starter `items[1]`，命令式放置形状。
 - **主视觉**：左侧简化 git diff（红浅底删除行 + 绿浅底增加行，Menlo 等宽）+ 右侧 ai-usage-log.md 新记录条（navy 标题栏 + 字段表）；底部结论带“以实际文件变化为准，不只看 Agent 自述”；五项勾选已移入 speaker notes
 - **验收三问**：① 删主视觉仅余标题条与结论带 ✓ ② P33 任务契约 vs P34 工件视图，轮廓不同 ✓ ③ diff+log 占画布主体 ≥40% ✓
 - **虚构标注**：左上“虚构教学情境”；speaker notes 末尾重申 diff/log 为虚构
@@ -99,24 +97,21 @@
 
 ### P07｜研究判断与工程工作流必须放在一起（首轮，2026-08-05）
 
-- **构建脚本**：`.tmp/lesson01-p07-p14/build-p07.mjs`
-- **产物**：`.tmp/lesson01-p07/lesson-01-P07-contrast.pptx`；渲染 `render/slide-P07.png` + LibreOffice 重开图
+- **构建记录**：原脚本、PPTX 与 LibreOffice 重开图已统一移入 `.work/ppt/lesson-01/`。
 - **主视觉**：左方法侧红框（evidence missing / baseline unclear → 判定失败）+ 右工作流侧绿框（Context/Permission/Diff/Log ✓ → 过程可检查）+ 中间大号红“≠”；底部结论带“可检查 ≠ 已成立”
 - **验收三问**：① 删主视觉仅余标题条与结论带 ✓ ② P06 概念/气氛 vs P07 对照，轮廓不同 ✓ ③ 虚构研究提交卡两侧+≠占主体 ≥40% ✓
 - **虚构标注**：左上“虚构教学情境”；speaker notes 重申
 
 ### P13｜16 次课围绕同一个项目逐步推进（首轮，2026-08-05）
 
-- **构建脚本**：`.tmp/lesson01-p07-p14/build-p13.mjs`
-- **产物**：`.tmp/lesson01-p13/lesson-01-P13-roadmap.pptx`；渲染 `render/slide-P13.png` + LibreOffice 重开图
+- **构建记录**：原脚本、PPTX 与 LibreOffice 重开图已统一移入 `.work/ppt/lesson-01/`。
 - **主视觉**：五阶段 navy pill 节点连成有高低起伏的折线路径（横跨全宽）+ G1-G4 红色竖线门槛标记（第6/9/13/16课）+ 底部 amber 形成性节点带（第8课分享/第15课预检）+ 底部结论带“所有课堂练习回写同一项目”
 - **验收三问**：① 删主视觉仅余标题条与结论带 ✓ ② P12 责任分工 vs P13 路线图，轮廓不同 ✓ ③ 起伏折线路径横跨全宽 ≥40% ✓
 - **待裁定**：G1-G4 标签字号在投影尺寸下可读性需复核
 
 ### P01｜AI 可以参与科研，研究责任仍由人承担（首轮，2026-08-05）
 
-- **构建脚本**：`.tmp/lesson01-p07-p14/build-p01.mjs`
-- **产物**：`.tmp/lesson01-p01/lesson-01-P01-cover.pptx`；渲染 `render/slide-P01.png` + LibreOffice 重开图
+- **构建记录**：原脚本、PPTX 与 LibreOffice 重开图已统一移入 `.work/ppt/lesson-01/`。
 - **主视觉**：中心判断句 navy 大字居中 + 弱化链路背景（问题—证据—实验—结论 浅色细线+点）+ 学分学时行；不放工具图标/四阶段卡片
 - **验收三问**：① 删主视觉仅余标题条与链路氛围 ✓ ② P01 极简封面 vs P02 投票钩子，轮廓不同 ✓ ③ 判断句大字占主体（气氛页预答成立）✓
 - **说明**：交大模版封面页无可编辑占位符，改用 template-starter 内容页底版做极简封面，保留品牌元素

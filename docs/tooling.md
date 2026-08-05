@@ -20,9 +20,9 @@
 
 ## 项目 skill
 
-`prepare-course-lesson` 备课门控 skill 已三端注册：
+`prepare-course-lesson` 备课门控 skill 已按三端入口注册：
 - Claude Code：`.claude/skills/prepare-course-lesson`（软链接到 `.agents/skills/prepare-course-lesson/`）
 - OpenCode：`.opencode/agent/prepare-course-lesson.md`（薄封装，运行时读 SKILL.md）
 - 单一事实源：`.agents/skills/prepare-course-lesson/SKILL.md`
 
-三端发现均已通过 smoke test（`opencode agent list` 含 `prepare-course-lesson (subagent)`）。负责课次备课的门控流程（内容门 / 90 分钟教学门 / 逐页映射门 → PPT 制作 → 技术教学视觉检查 → 里程碑归档）。当前备课流程见 [lessons/README.md](../lessons/README.md) 的"制作顺序"段。
+截至 2026-08-05 的验证状态：Codex 已从项目 `.agents/skills/` 发现该 skill；`opencode agent list` 已列出 `prepare-course-lesson (subagent)`；Claude Code 的单向软链接已解析到同一 `SKILL.md`，实际触发行为仍应在相关备课任务中单独做 smoke test。该 skill 负责内容门、90 分钟教学门、逐页映射门、PPT 制作、三重检查与里程碑归档。当前备课流程见 [lessons/README.md](../lessons/README.md) 的"制作顺序"段。
