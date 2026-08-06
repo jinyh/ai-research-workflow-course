@@ -304,6 +304,6 @@ AI 偏差审计（至少一处，见 §二·4）：
 
 1. Keshav, S. "How to Read a Paper." *ACM SIGCOMM Computer Communication Review* 37(3), 83–84 (2007). DOI: [10.1145/1273445.1273458](https://doi.org/10.1145/1273445.1273458)。[作者课程 PDF](https://cs.uwaterloo.ca/~brecht/courses/854-http-video-2012/readings/keshav-paper-reading.pdf)。用途：以三遍阅读法控制阅读深度，建立实验论文的检查问题。
 2. Booth, W. C. et al. *The Craft of Research*, 5th ed. University of Chicago Press, 2024. 选读 Chapter 4 "Engaging Sources"，重点为 reading for a problem、argument、data and support。[出版社页面](https://press.uchicago.edu/ucp/books/book/chicago/C/bo215874008)。用途：防止把作者主张、数据、证据和个人推断混为一谈。
-3. 沈向洋、华刚：《读科研论文的三个层次、四个阶段与十个问题》。[本地转载副本](<../references/library/research-method/how to search/沈向洋、华刚：读科研论文的三个层次、四个阶段与十个问题 - 知乎.pdf>)。只作为中文提问清单；正式分发前须确认原始出处与许可。
+3. 沈向洋、华刚：《读科研论文的三个层次、四个阶段与十个问题》。[本地转载副本](<../../references/library/research-method/how to search/沈向洋、华刚：读科研论文的三个层次、四个阶段与十个问题 - 知乎.pdf>)。只作为中文提问清单；正式分发前须确认原始出处与许可。
 
 课后阅读采用"AI 导航 → 原文核验 → AI 质疑 → 偏差审计 → 人工定稿"流程（见 reading-list.md 第二节）。本课核心阅读为 Keshav "How to Read a Paper"，约 20 分钟；阅读卡持续保存在个人项目 `notes/reading-cards/`，不逐周正式提交，第 6 课问题门统一检查至少 3 张与个人项目直接相关的完整精读卡。
