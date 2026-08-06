@@ -1,9 +1,10 @@
 ---
-版本：v1.1.1
-最后更新：2026-07-30
+版本：v1.2.0
+最后更新：2026-08-06
 适用课次：第 2 课
 文档类型：学生正式讲义
 变更记录：
+- v1.2.0 (2026-08-06): 按 v2.1.0 内容门对齐——补上海交通大学《关于在教育教学中使用 AI 的规范》校级四分类到任务级三档的映射；学习目标 5 条与 teaching-plan/slides 统一（第 2 条补"五字段风险卡"、第 3 条补"默认拒绝/完全仲裁/权限分离"）
 - v1.1.1 (2026-07-30): 删除与课堂实践重复的固定课后自测；保留核心阅读、项目更新和下一课准备
 - v1.1.0 (2026-07-30): 新增“十二、术语表”（13 条中英对照，覆盖风险卡五字段、四项权限原则、权限矩阵、任务契约、工件状态与 AI 使用记录）；修正第 10 节课后任务中诚信提醒机构名为“中国科学院科研道德委员会”，消除文件内部与跨文档不一致；原“十二、参考阅读”顺延为第十三节。
 - v1.0.2 (2026-07-30): 区分作者团队工作稿与正式同行评议稿；将“未公开材料一律禁止”调整为默认拒绝个人外部模型全文上传、满足授权和环境条件后可有条件允许
@@ -33,9 +34,9 @@
 完成本讲后，你应该能够：
 
 1. 从数据、证据、署名、版权、隐私、保密和双重用途等维度识别风险；
-2. 对一项 AI 辅助科研动作作出“允许／有条件允许／禁止”的判断，并说明理由；
-3. 根据最小权限原则填写 Agent 权限矩阵和人工确认点；
-4. 区分工件的 `draft → review → approved → stable` 四种成熟度；
+2. 对一项 AI 辅助科研动作作出“允许／有条件允许／禁止”的判断，并用五字段风险卡说明理由；
+3. 根据默认拒绝、最小权限、完全仲裁和权限分离填写 Agent 权限矩阵和人工确认点；
+4. 区分研究工件的 `draft → review → approved → stable` 四种成熟度；
 5. 用日志、状态和实际文件变化保存一条可追溯记录。
 
 ---
@@ -86,6 +87,16 @@ AI 不会自动破坏这些价值，也不会自动保障这些价值。风险�
 | 责任（Owner） | 谁决定是否继续，谁核验结果，谁对最终使用负责？ |
 
 五个字段的用途是迫使判断落到具体动作。只写“注意伦理风险”不能指导 Agent，也不能支持事后复核。
+
+### 校级规范与任务级处置
+
+上海交通大学《关于在教育教学中使用 AI 的规范》将使用场景分为禁止、限制、鼓励和开放四类，是课程最近制度基线。本课的任务级风险处置使用“禁止／有条件允许／允许”三档，映射关系如下：
+
+- 校级“禁止”对应任务级“禁止”；
+- 校级“限制”对应任务级“有条件允许”；
+- 校级“鼓励”“开放”对应任务级“允许”，但仍须服从材料授权、课程要求和披露责任。
+
+校级分类是场景治理，任务级处置是具体动作边界。校级“鼓励”或“开放”不等于无须风险卡和权限矩阵；当材料许可、共同作者、机构或期刊规则更严格时，执行更严格要求。授课前应复核学校规范是否有修订。
 
 ### 三种处置
 
@@ -412,12 +423,13 @@ Review：哪一步暂停并等待人工确认？
 ### 正式书目
 
 1. **核心规范**：中国科学院科研道德委员会：《关于在科研活动中规范使用人工智能技术的诚信提醒》（2024）。[官方页面](https://www.cas.cn/sygz/202409/t20240910_5031186.shtml)
-2. **共识报告选章**：National Academies of Sciences, Engineering, and Medicine. *Fostering Integrity in Research*, Chapter 2 (2017). DOI: [10.17226/21896](https://doi.org/10.17226/21896)。
-3. **经典论文选段**：Saltzer, J. H., & Schroeder, M. D. “The Protection of Information in Computer Systems” (1975)，只读 fail-safe defaults、complete mediation、separation of privilege 和 least privilege。[MIT 作者页面](https://web.mit.edu/Saltzer/www/publications/protection/)
+2. **校级规范**：上海交通大学：《关于在教育教学中使用 AI 的规范》（2025）。[正式文件](https://soo.sjtu.edu.cn/upload/file/20250217/20250217162021.pdf)，授课前复核是否有修订。
+3. **共识报告选章**：National Academies of Sciences, Engineering, and Medicine. *Fostering Integrity in Research*, Chapter 2 (2017). DOI: [10.17226/21896](https://doi.org/10.17226/21896)。
+4. **经典论文选段**：Saltzer, J. H., & Schroeder, M. D. “The Protection of Information in Computer Systems” (1975)，只读 fail-safe defaults、complete mediation、separation of privilege 和 least privilege。[MIT 作者页面](https://web.mit.edu/Saltzer/www/publications/protection/)
 
 ### 课堂案例
 
-4. Anthropic. [*Building Effective Agents*](https://www.anthropic.com/engineering/building-effective-agents) (2024)。只分析检查点、停止条件、沙箱测试和工具接口，不作为科研伦理规范。
+5. Anthropic. [*Building Effective Agents*](https://www.anthropic.com/engineering/building-effective-agents) (2024)。只分析检查点、停止条件、沙箱测试和工具接口，不作为科研伦理规范。
 
 课程模板：
 
