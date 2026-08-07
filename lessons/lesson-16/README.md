@@ -8,7 +8,9 @@
 | --- | --- | --- |
 | [handout.md](./handout.md) | 现行·学生讲义（草稿） | 面向学生、可脱离课堂独立阅读：最终论证结构（问题→证据→判断→实验→结论可追溯链路收口）、期末项目提交清单（逐项对齐 assignments.md Checkpoint 4 之 10 项 + project-template 全工件）、学生最终分享陈述结构（备课规划五项必答）、课程总结与复盘（八阶段链路反思 / AI 使用边界 / 不能自动化的判断）、AI 使用记录与伦理说明完整性检查、贯穿案例动作链、论证门+期末项目提交清单（对齐 assignments.md Checkpoint 4 之 10 项）、练习、术语、延伸阅读 |
 | [teaching-plan.md](./teaching-plan.md) | 现行·教师教案（草稿） | 90 分钟流程、PPT 执行索引、演示脚本、课堂产出验收、讲后复盘 |
-| [slides.md](./slides.md) | 现行·逐页母稿 v0.2.0（20 页） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
+| [slides.md](./slides.md) | 现行·逐页母稿 v0.2.1（20 页） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
+| [keystone-design-spec.md](./keystone-design-spec.md) | 现行·关键页设计规格 v1.0.1 | 10 个关键页的视觉、教学与验收契约 |
+| [slides.pptx](./slides.pptx) | 正式课堂 PPT（20 页） | 继承第 7 课交大模板的正式课堂投屏文件；逐页含 `[Sources]` speaker notes |
 
 ## 文件关系
 
@@ -40,7 +42,7 @@
 - **教师**：`teaching-plan.md` → `slides.md` → `course/ppt-quality-gates.md`
 - **维护者**：`AGENTS.md`（项目根）→ [备课规划.md](../备课规划.md) → 本 README → 各文件
 
-## 门控状态（2026-08-06）
+## 门控状态（2026-08-07）
 
 | 门 | 状态 |
 | --- | --- |
@@ -48,7 +50,9 @@
 | 2. 内容门 | ✅ 通过（三件套已对齐口径；讲义为内容源；关键结论绑定可核验来源——Alley 2013 / Peyton Jones 讲义 / Tao ICM 2026 / Booth et al. / Smith 1990 / assignments.md 门条件 / AGENTS.md 证据标准；AI 输出仅作线索；学术规范红线对齐 assessment.md；不残留旧口径——证据三角硬门槛/每周作业/默认小组提交均已清除；gate2 保守审校已去 4 处"不是 X，是 Y"对仗（P08 屏显+备注、P14、P19，保留 P04/P05/P07/P16 四处张力）与"本课是…最终验收""本课只确认"重复） |
 | 3. 90 分钟教学门 | ✅ 通过（按备课规划第 16 课"90 分钟建议"表权威 6 段 re-fit：P12+P13 归入 12-25 讲授段，P14 单页承接 25-45 陈述+抽查停留段，P15 单页承接 45-65 个人补全停留段，P16-P18 归入 65-78 复盘+同伴互查段；每页建议时间按段时长重排，段内均分；页量预算对照 6 段无超页段，六段全部保留；陈述超时用分会场/海报/短视频） |
 | 4. 逐页映射门 | ✅ 通过（20 页逐页映射表与 90 分钟节奏表页码列同步：P01-P07（seg1）/P08-P13（seg2）/P14（seg3）/P15（seg4）/P16-P18（seg5）/P19-P20（seg6）；每页标 handout 小节） |
-| 5. PPT 制作 | 未开始（前四门通过后才做） |
+| 5. PPT 制作 | ✅ 通过（按 `slides.md` v0.2.1 完成 20 页正式课堂 PPT；以第 7 课正式 PPT 为模板基线，保留 master/layout、交大校徽、红标题带、主题字体、页脚与页码；10 个关键页按 `keystone-design-spec.md` 实现；20/20 页 speaker notes 均含闭合 `[Sources]`） |
+| 6. 三重检查 | ✅ 通过（技术：模板保真 issueCount=0、overflow=0、空 placeholder=0、20/20 sources、LibreOffice 磁盘重开与 20 页重渲染通过；教学：20 页映射、六段 90 分钟节奏、P14/P15 两个 20 分钟停留、Checkpoint 4 十项、最终分享五问、抽查/评审/AI/伦理/工件/复盘一致；视觉：20/20 页逐页检查，10/10 关键页复核，未见阻断性 overlap、clipping、title wrapping 或密度问题；证据见 `.work/ppt/lesson-16/run-20260807/qa-ledger.txt`） |
+| 7. 里程碑归档 | ✅ 无需单独归档（本轮为首个正式课堂 PPT，无被替代正式稿；渲染、解包、layout 与 QA 证据保留在 `.work/ppt/lesson-16/run-20260807/`） |
 
 ## 待复核项
 
