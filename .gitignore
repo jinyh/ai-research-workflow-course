@@ -17,6 +17,15 @@ node_modules/
 __pycache__/
 *.pyc
 
+# 网站构建产物与虚拟环境（web/）
+/web/_build/
+/web/.venv/
+/web/__pycache__/
+/web/scripts/__pycache__/
+# web/docs/ 下由 link_content.py 生成的软链接内容（手写页面 index.md/teacher.md 仍跟踪）
+/web/docs/course/
+/web/docs/lessons/
+
 # inspection / layout 自动产物
 *.ndjson
 

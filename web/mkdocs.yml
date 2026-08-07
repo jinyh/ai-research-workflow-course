@@ -1,0 +1,76 @@
+site_name: 智能科研方法
+site_description: "上海交通大学研究生课程“智能科研方法”（AI for Research: Methods and Practice）"
+site_url: https://jinyh.github.io/ai4research/
+
+docs_dir: docs
+site_dir: _build
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换浅色模式
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search:
+      lang:
+        - ja  # Material 中文搜索的常用近似配置；必要时改用 jieba
+  - tags
+
+hooks:
+  - scripts/hide_metadata.py  # 剥离正文里的版本/最后更新/变更记录，不展示在网页
+  - scripts/strip_dead_links.py  # 把指向未发布目标的内部链接降级为纯文字，消除断链
+
+nav:
+  - 首页: index.md
+  - 课程介绍: teacher.md
+  - 课程大纲: course/syllabus.md
+  - 考核方式: course/assessment.md
+  - 项目与研究门: course/assignments.md
+  - 阅读清单: course/reading-list.md
+  - 学习资源: course/resources.md
+  - 课程讲义:
+      - 第一讲｜AI 辅助科研导论、OpenCode 与八阶段研究链路: lessons/lesson-01/handout.md
+      - 第二讲｜科研伦理、Agent 权限、研究工件与追踪: lessons/lesson-02/handout.md
+      - 第三讲｜文献检索与证据角色: lessons/lesson-03/handout.md
+      - 第四讲｜AI 辅助精读与主张核验: lessons/lesson-04/handout.md
+      - 第五讲｜综述结构、证据地图与研究空白: lessons/lesson-05/handout.md
+      - 第六讲｜问题定义、第一性原理与问题门: lessons/lesson-06/handout.md
+      - 第七讲｜机制假设、研究判断与实验设计: lessons/lesson-07/handout.md
+      - 第八讲｜学生研究方案分享与设计诊所: lessons/lesson-08/handout.md
+      - 第九讲｜Baseline、实验规格、可复现性与判断门: lessons/lesson-09/handout.md
+      - 第十讲｜AI 辅助编码、调试与受限 Agent 执行: lessons/lesson-10/handout.md
+      - 第十一讲｜实验自动化与 AutoResearch 循环: lessons/lesson-11/handout.md
+      - 第十二讲｜Agent/Skill 背后的逻辑与个人工作流设计: lessons/lesson-12/handout.md
+      - 第十三讲｜工作流评价、结果分析、失败审计与验证门: lessons/lesson-13/handout.md
+      - 第十四讲｜论文式写作、证据回写与 AI 使用披露: lessons/lesson-14/handout.md
+      - 第十五讲｜同行评审、论证门预检与修改: lessons/lesson-15/handout.md
+      - 第十六讲｜学生最终分享、论证门与期末项目: lessons/lesson-16/handout.md
