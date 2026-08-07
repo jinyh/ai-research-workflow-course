@@ -1,6 +1,6 @@
 # 逐课备课工作区
 
-最后更新：2026-08-05
+最后更新：2026-08-07
 
 `lessons/` 用于制作课程正式教学材料。试讲材料与正式授课材料必须分开管理。
 
@@ -14,7 +14,7 @@
 
 同一课只保留一套现行内容口径。PPTX 是该口径的视觉交付，不是独立的事实来源。
 
-当前状态（2026-08-06）：[备课规划](./备课规划.md) v2.1.0 整改口径已形成。**全 16 课内容侧草稿完成**（handout/teaching-plan/slides/README 四件套）。第 1-2 课 gates 1-4 全过（内容门+90分钟教学门+逐页映射门），第 3-16 课 gates 1-2 草稿通过、gate 3-4 草稿（备课规划部分课缺逐时间表，按默认节奏构造待桌面推演）。四次正式提交门（第 6 问题门/9 判断门/13 验证门/16 论证门）门条件已逐项对齐 `course/assignments.md` Checkpoint 1-4，评分合计 100% 对齐 `course/assessment.md`。gate 5 PPT 制作全课暂停（视觉构建路径待定，见 `.work/review/ppt-blind-build-failure` 教训）。各课详情见 `lesson-NN/README.md`。
+当前状态（2026-08-07）：[备课规划](./备课规划.md) v2.1.0 整改口径已形成。**全 16 课内容侧草稿完成**（handout/teaching-plan/slides/README 四件套）。第 1-2 课 gates 1-4 全过（内容门+90分钟教学门+逐页映射门），第 7 课 gates 1-4 全过（v0.2.0 方法段 11→7 页合并，per-page 时间按权威八段 re-fit），第 3-6/8-16 课 gates 1-2 草稿通过、gate 3-4 草稿（备课规划部分课缺逐时间表，按默认节奏构造待桌面推演）。四次正式提交门（第 6 问题门/9 判断门/13 验证门/16 论证门）门条件已逐项对齐 `course/assignments.md` Checkpoint 1-4，评分合计 100% 对齐 `course/assessment.md`。gate 5 方面，第 1 课正式 33 页 PPT 已完成并通过技术、教学、视觉检查；其他课仍须完成各自启动门和课次视觉规格。各课详情见 `lesson-NN/README.md`。
 
 ## 文件类型
 
@@ -34,7 +34,7 @@
 ## 第 1 课
 
 - 现行材料与门控状态统一从 [第 1 课内容入口](./lesson-01/README.md) 查看，避免在两处重复维护版本号。
-- 旧 39 页 PPTX 已归入 [PPT 试制里程碑](../archive/ppt-experiments/lesson-01/2026-07-30-pre-gate-39-page-baseline/decision-record.md)；新一轮 PPTX 在内容、90 分钟教学和逐页映射三道门通过前不定稿。
+- 旧 39 页 PPTX 已归入 [PPT 试制里程碑](../archive/ppt-experiments/lesson-01/2026-07-30-pre-gate-39-page-baseline/decision-record.md)；现行 33 页正式课件见 [slides.pptx](./lesson-01/slides.pptx)。
 - 2026-07-07 的详细教学包与旧详细讲义已迁入 [被替代文稿归档](../archive/superseded-docs/lesson-01/)，不参与现行制作。
 - [教师文献精读卡集](./lesson-01/reading-notes.md)：第 1 课涉及 8 份文献按 AI 辅助阅读协议产出的精读卡；原文定位已完成，待教师复核与定稿。
 

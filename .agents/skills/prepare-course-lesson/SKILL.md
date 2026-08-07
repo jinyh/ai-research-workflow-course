@@ -29,7 +29,7 @@ description: 备课门控流程。当用户要制作或修订某课的讲义、�
 
 5. **PPT 制作**：前三道门通过后才制作正式 `slides.pptx`。调用已有 presentation/PPT 能力（全局 `ppt-master` skill 等）完成文件级工作。所有构建过程限定在 `.work/ppt/lesson-NN/<run>/`，不得在 `lessons/` 根目录产生 `visual-sample-*`、`v1/v2/v3` 平行文件。
 
-6. **三重检查**：对最终 PPT 导出后重新打开或重新渲染，分别记录技术检查（图层遮挡、字体替换、裁切、换行、空 placeholder）、教学检查（页与母稿映射、学生动作）、视觉检查（主视觉对象、轮廓轮换、密度）。规则见 `course/ppt-quality-gates.md` 与 `lessons/ppt-design-criteria.md`。
+6. **三重检查**：对最终 PPT 导出后重新打开或重新渲染，分别记录技术检查（图层遮挡、字体替换、裁切、换行、空 placeholder）、教学检查（页与母稿映射、学生动作）、视觉检查（视觉锚点、叙事关系、页型密度）。规则见 `course/ppt-quality-gates.md` 与 `lessons/ppt-design-criteria.md`。
 
 7. **里程碑归档**：按 `archive/ppt-experiments/` 的标准（确立沿用视觉语言 / 记录重要取舍 / 正式版基线 / 不可由 Git 替代的证据）决定哪些试制结果归档。每个里程碑最多 1 PPTX + 1 contact sheet + 1 简短决策记录。不归档逐页 PNG、解包 XML、重复 PDF、inspection 文件。
 
@@ -38,7 +38,7 @@ description: 备课门控流程。当用户要制作或修订某课的讲义、�
 - 课程口径：`course/syllabus.md`、`course/curriculum.md`、`course/sync-rules.md`
 - 备课元文档：`lessons/备课规划.md`、`lessons/备课教训.md`、`lessons/README.md`（含材料状态表与制作顺序）
 - 材料契约：`references/material-contracts.md`
-- PPT 规则：`course/ppt-quality-gates.md`（质量门）、`lessons/ppt-design-criteria.md`（反卡片设计准则）
+- PPT 规则：`course/ppt-quality-gates.md`（质量门）、`lessons/ppt-design-criteria.md`（正式课堂设计准则）
 - 证据标准与安全边界：`AGENTS.md`
 - 正式交付位置：`deliverables/<term>/`
 - 临时产物位置：`.work/`（不纳入 Git）

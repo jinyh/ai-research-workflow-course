@@ -1,6 +1,6 @@
 # PPT 质量门
 
-> 从 `AGENTS.md` 抽取的 PPT 排版、证据框与验证细则。设计准则（反卡片、节奏、密度、主视觉来源）见 [lessons/ppt-design-criteria.md](../lessons/ppt-design-criteria.md)；本文件只承载交付前必须通过的质量门。
+> 从 `AGENTS.md` 抽取的 PPT 排版、证据框与验证细则。品牌基础、构图、视觉来源、密度、动画与设计验收见 [lessons/ppt-design-criteria.md](../lessons/ppt-design-criteria.md)；本文件只承载交付前必须通过的质量门。
 
 ## 正式 PPT 内容门
 
@@ -19,3 +19,6 @@
 ## 验证门（导出后）
 
 - PPT 验证必须包含"导出后重新打开或重新渲染"的逐页检查，重点核对图层遮挡、字体替换、裁切、换行、来源对应和空 placeholder；导出前预览不能替代最终文件检查。
+- 重建正式 PPTX 前必须确认 PowerPoint、Impress 等应用不再持有并可能自动保存目标文件；无法确认时先输出到 `.work` 临时路径，待应用关闭后再替换正式文件。
+- 所有验证必须针对最后一次磁盘写入后的正式路径。至少核对修改时间或哈希，并直接解包抽查本轮变更页的屏显文字、speaker notes 和新增内嵌资产；随后再次重开或重新渲染。较早生成的预览、PDF 或检查日志不能证明之后未发生反向覆盖。
+- 未跟踪的二进制 PPTX 不会出现在普通 `git diff` 中；必须结合 `git status` 与文件级检查判断是否变化。
