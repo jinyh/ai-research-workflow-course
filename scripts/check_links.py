@@ -56,7 +56,10 @@ def tracked_markdown() -> list[Path]:
         for item in result.stdout.split(b"\0")
         if item
     )
-    return sorted(path for path in candidates if path.exists())
+    return sorted(
+        path for path in candidates
+        if path.exists() and not path.is_symlink()
+    )
 
 
 def strip_code_spans(line: str) -> str:
