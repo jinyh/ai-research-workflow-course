@@ -198,8 +198,7 @@ AI 已成为跨学科科学发现全过程（数据→表示→假设→实验�
 - 未深入 Agent 权限、工件追踪、AI 使用披露等治理议题，需第 2 课材料补足。
 
 **(8) 与第 1 课教学的关联**
-- slides P04：本文 Fig.1（p.48）是「AI 已进入假设生成、实验设计、数据处理和科学解释等环节」的图证来源。
-- slides P05：Grand challenges（p.55–56）的分布外泛化、因果、可复现、黑箱是「效率提升与科学范围扩展不是同一问题」的依据。
+- slides P05：本文 Fig.1（p.48）为第一列“2023 综述”提供全流程框架；Grand challenges（p.55–56）支持“综述性框架、具体能力须回原始研究”的证据边界。
 - 八阶段（P21–P25）：Fig.1 的 Observations/Hypotheses/Experiments 与八阶段粗略对应（Observations↔阶段 4/5，Hypotheses↔阶段 3/6，Experiments↔阶段 7），但本文不区分问题定义与第一性原理（阶段 1-2），不强调回写与表达（阶段 8），只能作环节定位，不替代八阶段语言。
 - 可追溯性：p.56「measure uncertainty, error, utility」与 P08「真实问题→可核验证据→可复现实验→可追溯论证」一致。
 - 科研伦理：p.55–56 的 dual-use、misuse、responsible deployment 对应第 2 课伦理底线，但本文不提供操作级清单。
