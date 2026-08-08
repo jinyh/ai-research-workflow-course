@@ -6,11 +6,11 @@
 
 | 文件 | 角色 | 用途 |
 | --- | --- | --- |
-| [handout.md](./handout.md) | 现行·学生讲义 v0.3.0 | 面向学生、可脱离课堂独立阅读：从研究空白到结构性问题、非例边界、可证伪命题写法、第一性原理推导（含适用边界）、问题门提交清单（对齐 assignments.md 与 starter-template.md）、练习、术语、延伸阅读 |
-| [teaching-plan.md](./teaching-plan.md) | 现行·教师教案 v0.4.0 | 90 分钟流程、PPT 执行索引、演示脚本、课堂产出验收、讲后复盘 |
-| [slides.md](./slides.md) | 现行·逐页母稿 v0.5.0（20 页，gates 1-6 通过） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
+| [handout.md](./handout.md) | 现行·学生讲义 v0.4.0 | 面向学生、可脱离课堂独立阅读：从研究空白到结构性问题、非例边界、可证伪命题写法、第一性原理推导（含适用边界）、问题门提交清单（对齐 assignments.md 与 starter-template.md）、练习、术语、延伸阅读 |
+| [teaching-plan.md](./teaching-plan.md) | 现行·教师教案 v0.5.0 | 90 分钟流程、PPT 执行索引、演示脚本、课堂产出验收、讲后复盘 |
+| [slides.md](./slides.md) | 现行·逐页母稿 v0.6.0（20 页，gates 1-6 通过） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
 | [slides.pptx](./slides.pptx) | 现行·正式课堂 PPT | 20 页可编辑 PPTX；已通过模板继承、结构、逐页视觉与 LibreOffice 重开检查 |
-| [keystone-design-spec.md](./keystone-design-spec.md) | 规范 v1.0.1 | 风险触发关键页的设计契约、证据边界、模板例外与制作后验收 |
+| [keystone-design-spec.md](./keystone-design-spec.md) | 规范 v1.1.0 | 风险触发关键页的设计契约、证据边界、模板例外与制作后验收 |
 
 ## 文件关系
 

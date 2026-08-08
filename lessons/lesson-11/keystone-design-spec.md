@@ -1,5 +1,5 @@
 ---
-版本：v1.0.1
+版本：v1.0.2
 最后更新：2026-08-07
 适用课次：第 11 课
 文档类型：关键页设计规格
@@ -11,7 +11,7 @@
 
 # 第 11 课关键页设计规格
 
-依据 [正式课堂 PPT 设计准则](../ppt-design-criteria.md) v1.2.0。屏显文案、讲述、互动、时间和来源以 [slides.md](./slides.md) v0.2.2 为唯一现行母稿。
+依据 [正式课堂 PPT 设计准则](../ppt-design-criteria.md) v1.2.0。屏显文案、讲述、互动、时间和来源以 [slides.md](./slides.md) v0.2.3 为唯一现行母稿。
 
 ## 一、关键页集合
 
@@ -138,7 +138,7 @@
 
 ## 五、正式制作验收
 
-- 正式文件：`slides.pptx`，19 页；SHA-256 `31bb8282a966364761f791f434a4c70a055fe23ef762f85696e535c5907a1b9f`。
+- 正式文件：`slides.pptx`，19 页；SHA-256 `0ac0b5f632dabee4ed2eeb335536604079b2a7a6ab12acfd6395a82107a6cd89`。
 - 模板：继承 `lesson-07/slides.pptx` 的 1 个 master、4 个 layout、交大品牌、红标题带、页脚和字体体系；模板忠实度检查 0 问题。
 - 技术：越界对象 0；空结构 placeholder 0；默认提示文本 0；19 页 speaker notes 均含 `[Sources]`。
 - 教学：19 页均映射 handout；五步、四约束、失败保留、AutoResearch/AI Scientist 分析边界与第 12 课衔接均在画面闭环。

@@ -2,14 +2,18 @@
 
 > 同行评审、论证门预检与修改。本文件是第 15 课所有材料的导航入口，说明各文件角色、关系与阅读路径。门控流程见 [prepare-course-lesson skill](../../.agents/skills/prepare-course-lesson/SKILL.md)。
 
+> 本轮现行版本：`handout.md` v0.1.2、`teaching-plan.md` v0.2.4、`slides.md` v0.2.4、`keystone-design-spec.md` v1.0.1；学生工件只使用 `peer-review.md` 与 `revision-plan.md`。
+
 ## 文件清单
 
 | 文件 | 角色 | 用途 |
 | --- | --- | --- |
-| [handout.md](./handout.md) | 现行·学生讲义 v0.1.1 | 面向学生、可脱离课堂独立阅读：同行评审 rubric（论证链/证据充分/局限披露/可复现/伦理）、评审校准、同伴交叉评审三问、评审者礼仪与边界（指向工作不指向人、不替代作者判断、不给排名）、四类回应（采纳/澄清/补证/保留异议）、回应记录表六字段、修改优先级三级（致命/重要/表达）、论证门预检清单、AI 只作评审线索、练习、术语、延伸阅读 |
-| [teaching-plan.md](./teaching-plan.md) | 现行·教师教案 v0.2.2 | 90 分钟流程、PPT 执行索引、演示脚本、课堂产出验收、讲后复盘 |
-| [slides.md](./slides.md) | 现行·逐页母稿 v0.2.2（16 页） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
-| [keystone-design-spec.md](./keystone-design-spec.md) | 现行·关键页设计规格 v1.0.0 | 14 个关键页四字段契约、虚构材料标注和模板许可 |
+| [handout.md](./handout.md) | 现行·学生讲义 v0.1.2 | 面向学生、可脱离课堂独立阅读：同行评审 rubric（论证链/证据充分/局限披露/可复现/伦理）、评审校准、同伴交叉评审三问、评审者礼仪与边界（指向工作不指向人、不替代作者判断、不给排名）、四类回应（采纳/澄清/补证/保留异议）、回应记录表六字段、修改优先级三级（致命/重要/表达）、论证门预检清单、AI 只作评审线索、练习、术语、延伸阅读 |
+| [teaching-plan.md](./teaching-plan.md) | 现行·教师教案 v0.2.4 | 90 分钟流程、PPT 执行索引、演示脚本、课堂产出验收、讲后复盘 |
+| [slides.md](./slides.md) | 现行·逐页母稿 v0.2.4（16 页） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
+| [keystone-design-spec.md](./keystone-design-spec.md) | 现行·关键页设计规格 v1.0.1 | 14 个关键页四字段契约、虚构材料标注和模板许可 |
+| [peer-review-template.md](./peer-review-template.md) | 现行·`peer-review.md` 模板 | 同伴三问、五维评审和作者六字段回应 |
+| [revision-plan-template.md](./revision-plan-template.md) | 现行·`revision-plan.md` 模板 | 三级优先级、影响工件、时限与 Checkpoint 4 预检 |
 | [slides.pptx](./slides.pptx) | 现行·正式课堂 PPT（16 页） | 继承第 7 课交大模板；16 页均含 `[Sources]` speaker notes；主节奏 13 页 + 备用 3 页 |
 
 ## 文件关系
@@ -18,7 +22,7 @@
 - 承接第 14 课论文式短文初版：本课把第 14 课的论文式短文初稿（问题、方法、实验或验证、结果、局限、AI 使用披露）暴露给同伴按五维度 rubric 质询。若第 14 课初稿尚未完成，本课评审使用学生当前最新版本短文，并在评审记录中标注"评审对象版本"。
 - 为第 16 课论证门+期末项目铺垫：本课产出的"已处理第 15 课同行评审意见"是第 16 课论证门 Checkpoint 4 条件之一（[assignments.md](../../course/assignments.md) Checkpoint 4 第 4 项）；五维度 rubric 是论证门条件（论证链、证据充分、局限披露、可复现、伦理）的可操作预检。
 - 强调：本课是形成性预检活动，不新增正式提交、不计周作业分（[assignments.md](../../course/assignments.md) "第 15 课"段；syllabus.md 第 15 课行注"不单独正式提交"）。同伴评审只作输入，采纳决策由作者本人作出并记录理由。
-- 回应记录表和修改优先级清单写入个人项目 `peer-review-log.md` 与 `revision-priority.md`（或沿用 `starter-template.md` 对应小节），合并到研究判断记录，第 16 课随论证门统一检查。
+- 同伴评审意见与作者回应写入 `peer-review.md`；修改优先级和论证门预检写入 `revision-plan.md`。第 16 课随论证门统一检查。
 
 ## 关联课程文档
 
@@ -51,7 +55,7 @@
 
 ## 正式 PPT 验证记录（2026-08-07）
 
-- 页数：16；主节奏 P01-P13，备用 P14-P16；画布 16:9；SHA-256：`b732f5fe4a2d128ed1d28c276003d1efc3178f58962bb163a59c0ab48f940152`。
+- 页数：16；主节奏 P01-P13，备用 P14-P16；画布 16:9；SHA-256：`0ed8ea01d192cccd3f6274acb2395285a3eeb97c42b750943395acfc04fe2b73`。
 - 模板跟随：源为 `lessons/lesson-07/slides.pptx`；完整审计 16 个源页，模板保真检查 0 issues。
 - 结构检查：16 张 slide、16 张 notes、16 个 `[Sources]` 块；空结构 placeholder 0；默认 prompt 0；layout 越界 0。
 - 教学检查：0-15 / 15-35 / 35-50 / 50-65 / 65-82 / 82-90 节奏完整；P10 明确每人至少评 1 位固定同伴并收 1 位三问；P12 逐项呈现 Checkpoint 4 十项条件；作者保留决定权贯穿 P06/P11/P16。
@@ -74,6 +78,6 @@
 - 与第 16 课论证门的衔接点：论证门材料包（论文式短文定稿、复现说明、Agent Workflow 运行说明、伦理与 AI 使用披露、工件状态追踪表、展示与复现抽查）的迁移路径是否在 slides P14 进一步细化；
 - 与第 14 课的衔接点：第 14 课论文式短文初稿到第 15 课评审对象的对应是否在 slides P02 进一步细化；第 14 课讲义已完成（v0.1.0），本课对第 14 课产出的描述需对照第 14 课讲义回写校准；
 - 贯穿案例是否需要在第 14-16 课之间保持一致（当前沿用第 1 课证据追踪表 / 第 5 课结构化阅读卡 / 第 7-8 课机制假设与实验规格同一案例族）；
-- `peer-review-log.md` 与 `revision-priority.md` 字段模板是否需要根据本课新增"回应记录表"和"修改优先级清单"段更新 [starter-template.md](../../course/starter-template.md)。
+- 已按 [project-template.md](../../course/project-template.md) v1.1.0 提供 `peer-review.md` 与 `revision-plan.md` 本课模板，无需另立回应或优先级工件。
 
 制作顺序与材料状态表见 [lessons/README.md](../README.md)。

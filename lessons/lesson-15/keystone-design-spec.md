@@ -1,6 +1,6 @@
 # 第 15 课 PPT 关键页设计规格
 
-版本：v1.0.0  
+版本：v1.0.1
 日期：2026-08-07  
 模板基线：`lessons/lesson-07/slides.pptx`
 
@@ -35,4 +35,3 @@
 - 许可删除源 P02 的 lesson-07 正文对象，在正文安全区添加可编辑形状和文本。
 - 不许可修改 master、layout、校徽、校名、红色标题带、页码位置或主题色。
 - 每页 speaker notes 必须包含 `[Sources]`；课程虚构材料写明 `Teaching artifact; fictional`。
-

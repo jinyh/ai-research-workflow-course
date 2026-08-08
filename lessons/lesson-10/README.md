@@ -6,11 +6,12 @@
 
 | 文件 | 角色 | 用途 |
 | --- | --- | --- |
-| [handout.md](./handout.md) | 现行·学生讲义（草稿） | 面向学生、可脱离课堂独立阅读：从模糊 prompt 到任务契约五字段（Context / Permission / Non-goal / 人工审核点 / 失败恢复）、权限分层与人工审核点、Agent 代码人工核验（diff 审查 / 测试先行 / 不外包判断）、修复根因 / 绕过失败 / 污染实验三区分、SWE-bench 视角、贯穿案例（承接第 9 课实验规格的一步）、练习、术语、延伸阅读 |
-| [teaching-plan.md](./teaching-plan.md) | 现行·教师教案（草稿） | 90 分钟流程、PPT 执行索引、演示脚本、课堂产出验收、讲后复盘 |
-| [slides.md](./slides.md) | 现行·逐页母稿 v0.2.0（16 页，草稿） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
-| [keystone-design-spec.md](./keystone-design-spec.md) | 现行·关键页设计规格 v1.0.1 | 10 个风险触发关键页的页面任务、视觉锚点、叙事关系、模板映射与验收条件 |
+| [handout.md](./handout.md) | 现行·学生讲义 v0.2.0 | 面向学生、可脱离课堂独立阅读：从模糊 prompt 到任务契约五字段（Context / Permission / Non-goal / 人工审核点 / 失败恢复）、权限分层与人工审核点、Agent 代码人工核验（diff 审查 / 测试先行 / 不外包判断）、修复根因 / 绕过失败 / 污染实验三区分、SWE-bench 视角、贯穿案例（承接第 9 课实验规格的一步）、练习、术语、延伸阅读 |
+| [teaching-plan.md](./teaching-plan.md) | 现行·教师教案 v0.3.0 | 90 分钟流程、PPT 执行索引、演示脚本、课堂产出验收、讲后复盘 |
+| [slides.md](./slides.md) | 现行·逐页母稿 v0.3.0（16 页） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
+| [keystone-design-spec.md](./keystone-design-spec.md) | 现行·关键页设计规格 v1.1.0 | 10 个风险触发关键页的页面任务、视觉锚点、叙事关系、模板映射与验收条件 |
 | [slides.pptx](./slides.pptx) | 正式·课堂 PPT（16 页） | 继承第 7 课交大正式模板；每页含 `[Sources]` speaker notes；已完成技术、教学、视觉与 LibreOffice 重开检查 |
+| [assets/agent-task-example/](./assets/agent-task-example/) | 现行·课次本地真实教学工件 | 可核验的 before/after、`generate.diff`、`unittest`、测试输出与越权失败日志；供 P12 演示和无执行环境备用路径使用 |
 
 ## 文件关系
 
@@ -43,9 +44,9 @@
 | --- | --- |
 | 1. 课次目标 | ✅ 通过（取自 `备课规划.md` 第 10 课目标段；八阶段定位阶段七"原型验证"中的受限 Agent 执行；承接第 9 课判断门，向第 11 课自动化循环输出） |
 | 2. 内容门 | ✅ 保守审校通过（三件套已对齐口径；讲义为内容源；关键结论绑定可核验来源——Russell & Norvig 2020 Ch 2 / Yao et al. ReAct ICLR 2023 / Amershi et al. CHI 2019 / Jimenez et al. SWE-bench ICLR 2024 / assignments.md 第 10 课非正式提交门 / assessment.md 学术规范红线；AI 输出仅作线索；第二轮去 AI 痕迹完成：去 3 处 meta 自白、blockquote 保留 4 处张力其余转正面、视觉结构否定式转正面；handout 正文/案例/证据未动） |
-| 3. 90 分钟教学门 | ✅ 通过（按 `备课规划.md` 第 10 课权威 5 段 re-fit 页量预算 20→16 页，4 处合并；per-page 时间在 0-90 段内均分；第一次学生动手 40 分钟；最小产出=任务契约五字段 + diff 审查六项 + 失败记录至少一条 + AI 使用记录一条；备用路径已标；桌面推演待续） |
+| 3. 90 分钟教学门 | ✅ 通过（按 `备课规划.md` 第 10 课权威 5 段 re-fit 页量预算 20→16 页，4 处合并；per-page 时间在 0-90 段内均分；40-60 分钟持续个人实践；课堂最低闭环=选一个受限步骤 + 任务契约五字段/权限 + 检查真实或预置 diff + 一项验证证据与一次失败/越权处理 + 启动 AI 披露；无执行环境时改审课次本地真实工件，产出不降级） |
 | 4. 逐页映射门 | ✅ 通过（16 页映射表已复核，每页标 handout 小节；六段主题块保留，合并不跨块；90 分钟节奏表页码列与 teaching-plan §五 PPT 执行索引已同步） |
-| 5. PPT 制作 | ✅ 通过（按 `slides.md` v0.2.0 完成 16 页正式课堂 PPT；以第 7 课正式 PPT 为模板基线，保留 master/layout、交大校徽、红标题带、主题字体、页脚与页码；10 个关键页按 `keystone-design-spec.md` 实现；16/16 页 speaker notes 均含闭合 `[Sources]`） |
+| 5. PPT 制作 | ✅ 通过（按 `slides.md` v0.3.0 完成 16 页正式课堂 PPT；以第 7 课正式 PPT 为模板基线，保留 master/layout、交大校徽、红标题带、主题字体、页脚与页码；10 个关键页按 `keystone-design-spec.md` 实现；16/16 页 speaker notes 均含闭合 `[Sources]`） |
 | 6. 三重检查 | ✅ 通过（技术：模板保真 issueCount=0、overflow=0、空 placeholder=0、16/16 sources、LibreOffice 磁盘重开与 16 页重渲染通过；教学：16 页映射、90 分钟五段、40 分钟首次动手、最小产出闭环一致；视觉：16/16 页逐页检查，10/10 关键页复核，未见阻断性 overlap/clipping/wrapping/密度问题；证据见 `.work/ppt/lesson-10/run-20260807/qa-ledger.txt`） |
 | 7. 里程碑归档 | ✅ 无需单独归档（本轮为首个正式课堂 PPT，无被替代正式稿；渲染、解包、layout 与 QA 证据保留在 `.work/ppt/lesson-10/run-20260807/`） |
 
@@ -62,11 +63,10 @@
 - `备课规划.md` 第 10 课段已补权威 5 段逐时间表（0-20/20-40/40-60/60-78/78-90），slides.md v0.2.0 与 teaching-plan 已据此 re-fit；
 - 演示用第 9 课贯穿案例实验规格（"拟用 Agent"步骤标注）需在授课前准备可投屏版本；
 - 演示用任务契约样例（`generate_summary()` 任务五字段）需在授课前准备可投屏版本；
-- 演示用 diff 样例（一段授权修改 + 一段越权修改）需在授课前准备；
-- 演示用失败记录样例（Agent 越权请求 + 拒绝 + 记录）需在授课前准备可投屏版本；
+- 演示用真实 diff、`unittest` 输出与越权失败日志已放入 `assets/agent-task-example/`；授课前只需确认投屏路径与本机 Python 可用，无执行环境时直接审查这些预置工件；
 - 16 页密度已按权威 5 段 re-fit（原 20 页→16 页，4 处合并：旧 P02+P03、旧 P07+P08、旧 P10+P11、旧 P15+P16），并通过逐页渲染、模板保真、溢出、空 placeholder 与 LibreOffice 重开检查；真实课堂桌面推演后的节奏微调仍由教师决定；
 - 与第 11 课的衔接点：本课"一次执行"如何扩展为第 11 课"Edit → Evaluate → Keep/Discard → Repeat"循环，任务契约五字段中哪些字段需要为循环增加"预算"与"停止条件"字段；
 - 贯穿案例是否需要在第 9-10 课之间保持一致（当前沿用第 1 课证据追踪表 / 第 5 课结构化阅读卡 / 第 7 课实验规格草图 / 第 9 课判断门材料同一案例族）；
-- [project-template.md](../../course/project-template.md) 是否需要新增 `agent-tasks/` 目录字段（当前模板未显式列出该目录，本课新建）。
+- [project-template.md](../../course/project-template.md) v1.1.0 已纳入 `agent-tasks/` 与 `experiments/*/agent-traces/`，本课写入路径已对齐。
 
 制作顺序与材料状态表见 [lessons/README.md](../README.md)。

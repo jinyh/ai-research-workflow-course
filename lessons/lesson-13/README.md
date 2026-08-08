@@ -6,10 +6,12 @@
 
 | 文件 | 角色 | 用途 |
 | --- | --- | --- |
-| [handout.md](./handout.md) | 现行·学生讲义（草稿） | 面向学生、可脱离课堂独立阅读：工作流评价（不是功能清单、评价维度、可重复评价、实际影响）、结果分析（映射回假设、正向与负向均记录、证据充分性、威胁有效性）、失败审计（失败不选择性删除、六类根因骨架、失败日志、人工审核记录）、贯穿案例动作链、验证门提交清单（对齐 assignments.md Checkpoint 3 之 10 项）、练习、术语、延伸阅读 |
-| [teaching-plan.md](./teaching-plan.md) | 现行·教师教案（草稿） | 90 分钟流程、PPT 执行索引、演示脚本、课堂产出验收、讲后复盘 |
-| [slides.md](./slides.md) | 现行·逐页母稿 v0.2.0（19 页，草稿） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
-| [keystone-design-spec.md](./keystone-design-spec.md) | 现行·关键页设计规格 v1.0.1 | 10 个风险触发关键页的页面任务、视觉锚点、叙事关系、模板映射与验收条件 |
+| [handout.md](./handout.md) | 现行·学生正式讲义 v0.1.1 | 面向学生、可脱离课堂独立阅读：工作流评价（不是功能清单、评价维度、可重复评价、实际影响）、结果分析（映射回假设、正向与负向均记录、证据充分性、威胁有效性）、失败审计（失败不选择性删除、六类根因骨架、失败日志、人工审核记录）、贯穿案例动作链、验证门提交清单（对齐 assignments.md Checkpoint 3 之 10 项）、练习、术语、延伸阅读 |
+| [teaching-plan.md](./teaching-plan.md) | 现行·教师教案 v0.1.2 | 90 分钟流程、PPT 执行索引、演示脚本、课堂产出验收、讲后复盘 |
+| [slides.md](./slides.md) | 现行·逐页母稿 v0.2.2（19 页） | 逐页屏显文案、视觉结构、讲述备注、互动、时间、来源与事实边界 |
+| [keystone-design-spec.md](./keystone-design-spec.md) | 现行·关键页设计规格 v1.0.2 | 10 个风险触发关键页的页面任务、视觉锚点、叙事关系、模板映射与验收条件 |
+| [evaluation-report-template.md](./evaluation-report-template.md) | 现行·评价报告模板 | 学生直接写入个人项目 `evaluation-report.md` 的七段结构 |
+| [evaluation-report-example.md](./evaluation-report-example.md) | 教学样例·虚构 | 展示结果映射、负向结果、失败审计与待验证状态；所有数值/ID 明示虚构 |
 | [slides.pptx](./slides.pptx) | 正式·课堂 PPT（19 页） | 继承第 7 课交大正式模板；每页含 `[Sources]` speaker notes；已完成技术、教学、视觉与 LibreOffice 重开检查 |
 
 ## 文件关系
@@ -48,7 +50,7 @@
 | 2. 内容门 | ✅ 通过（保守审校完成：对仗句降格保留 P01/P04/P08/P12 四处张力、meta 自白清除；三件套口径一致；关键结论绑定可核验来源——Sculley et al. 2015 / Bouthillier et al. 2021 / Breck et al. 2017 / MLAgentBench / assignments.md 门条件；AI 输出仅作线索；失败不选择性删除对齐 AGENTS.md 与 assessment.md 学术规范红线；待审阅引擎复核） |
 | 3. 90 分钟教学门 | ✅ 通过（节奏表对齐 备课规划 第 13 课权威 5 段 0-18/18-35/35-60/60-78/78-90；页量预算：合并原 P14+P15→新 P14，第二段 8→7 页，消除 P15 跨段；per-page 时间重排到段内均分，覆盖 0-90；第一次学生动手 35 分钟，最小产出=evaluation-report.md 初版 + 伦理说明更新三条；备用路径已标） |
 | 4. 逐页映射门 | ✅ 通过（19 页映射表已复核，每页标 handout 小节，六段保留；90 分钟节奏表页码列同步） |
-| 5. PPT 制作 | ✅ 通过（按 `slides.md` v0.2.0 完成 19 页正式课堂 PPT；以第 7 课正式 PPT 为模板基线，保留 master/layout、交大校徽、红标题带、主题字体、页脚与页码；10 个关键页按 `keystone-design-spec.md` 实现；19/19 页 speaker notes 均含闭合 `[Sources]`） |
+| 5. PPT 制作 | ✅ 通过（按 `slides.md` v0.2.2 完成 19 页正式课堂 PPT；以第 7 课正式 PPT 为模板基线，保留 master/layout、交大校徽、红标题带、主题字体、页脚与页码；10 个关键页按 `keystone-design-spec.md` 实现；19/19 页 speaker notes 均含闭合 `[Sources]`） |
 | 6. 三重检查 | ✅ 通过（技术：模板保真 issueCount=0、overflow=0、空 placeholder=0、19/19 sources、LibreOffice 磁盘重开与 19 页重渲染通过；教学：19 页映射、90 分钟五段、35 分钟首次动手、Checkpoint 3 十项和第 14 课衔接一致；视觉：19/19 页逐页检查，10/10 关键页复核，未见阻断性 overlap/clipping/title wrapping/密度问题；证据见 `.work/ppt/lesson-13/run-20260807/qa-ledger.txt`） |
 | 7. 里程碑归档 | ✅ 无需单独归档（本轮为首个正式课堂 PPT，无被替代正式稿；渲染、解包、layout 与 QA 证据保留在 `.work/ppt/lesson-13/run-20260807/`） |
 

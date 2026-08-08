@@ -1,10 +1,11 @@
 ---
-版本：v0.1.1
+版本：v0.1.2
 最后更新：2026-08-07
 适用课次：第 11 课
-文档类型：学生正式讲义（草稿）
-状态：草稿，待教师复核与第二轮审校
+文档类型：学生正式讲义
+状态：现行；内容门与教学门已复核
 变更记录：
+- v0.1.2 (2026-08-07): 转为现行正式讲义；增加可直接核验的 AutoResearch `program.md` 固定版本字段对象，保留不外推边界。
 - v0.1.1 (2026-08-07): 复核 gates 2-4；固定 AutoResearch 课程分析版本为 commit `228791f`；精确改写 AI Scientist workshop 评审口径；明确贯穿案例中的数字、commit 与 rubric 版本均为课程教学示意，非实验结果。
 - v0.1.0 (2026-08-06): 从零起草；定位阶段七"原型验证（实验追踪）"；承接第 10 课受限 Agent；含实验自动化循环（假设→运行→度量→评价→回写/回退）、固定指标/预算/停止条件/回退、AutoResearch 元模式与 AI Scientist 案例分析（八维框架，不外推为通用自主科研）、失败实验记录与不选择性删除、贯穿案例改写为受限循环；用真实可核验来源（Sandve et al. 2013、Lu et al. Nature 2026、Huang et al. MLAgentBench ICML 2024、Karpathy AutoResearch）；为第 12 课个人工作流设计铺垫
 ---
@@ -161,6 +162,8 @@
 > 来源参考：Lu, C. et al. "Towards end-to-end automation of AI research." *Nature* (2026). DOI: [10.1038/s41586-026-10265-5](https://www.nature.com/articles/s41586-026-10265-5)。用途：分析端到端自动化的任务范围、评价证据和仍需人工判断的边界。**不外推为通用自主科研能力**——论文报告的是特定机器学习研究设置下的系统表现；三篇送审稿中一篇评分超过工作坊平均接收阈值，但按预设协议在审后撤回；该工作坊接收率为 70%，研究团队内部判断三篇均未达到 ICLR 主会标准。这不等于顶会正式接收，也不适用于所有学科。
 
 > 来源参考：Karpathy. [*AutoResearch*（commit `228791f`）](https://github.com/karpathy/autoresearch/tree/228791fb499afffb54b46200aca536f79142f117)。用途：分析固定时间预算、固定 `val_bpb` 评价、`keep/discard/crash` 日志和回退的最小循环骨架。它是 2026 年工程案例，不是经典理论，也不证明通用自主科研能力。
+
+PPT 中的工件视图直接绑定该 commit 的 [`program.md`](https://github.com/karpathy/autoresearch/blob/228791fb499afffb54b46200aca536f79142f117/program.md)，只摘出可核对字段：仅修改 `train.py`、单次固定时间预算、以 `val_bpb` 为评价指标，并记录 `keep / discard / crash`。这是源文档字段的课堂重绘，不是系统运行截图或实验结果。
 
 ### 2. 八维框架拆解
 
