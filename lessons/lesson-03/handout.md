@@ -1,10 +1,11 @@
 ---
-版本：v0.1.0
+版本：v1.0.0
 最后更新：2026-08-06
 适用课次：第 3 课
-文档类型：学生正式讲义（草稿）
-状态：草稿，待教师复核与第二轮审校
+文档类型：学生正式讲义
+状态：现行
 变更记录：
+- v1.0.0 (2026-08-07): 完成内容复核；统一四态与候选表/证据主格进入规则；增加 Keshav 2007 真实 Crossref—DOI—原文 trace；将 27 分钟最低产出收缩为 1 条检索记录、2 条审计、1 条已核验候选记录和 1 条 AI 记录
 - v0.1.0 (2026-08-06): 从零起草；定位阶段四"外部输入摄取"；建立检索式构建、证据角色区分、AI 检索结果回原文核验、练习、术语与延伸阅读
 ---
 
@@ -173,9 +174,32 @@ AND ("limitation" OR "scope" OR "boundary")
 
 未完成这些步骤前，这条文献只能标为"探索线索"。
 
-### 3. 来源审计示例
+### 3. 四态与进入规则
 
-假设 AI 围绕"结构化提示能否消除 AI 论文摘要中的引用幻觉"给出一份综合报告，列出 5 篇文献。来源审计的最小记录：
+| 状态 | 含义 | 候选表与证据主格规则 |
+| --- | --- | --- |
+| `pending` | 尚未回到正式来源或原文完成核验 | 可留在候选表，但必须显著标为待核验；只能放在线索区，不进证据地图主格或综述草稿 |
+| `verified` | 书目信息、主张与原文一致 | 可进候选表与证据主格，仍需标证据角色和纳入理由 |
+| `verified-with-caveat` | 核心主张与原文一致，但存在范围、方法、版本或措辞限定 | 可进候选表与证据主格，但必须保留 caveat 及原文页码/节号；不得单独支撑 `stable` 结论 |
+| `rejected` | 来源不存在、身份错误或主张与原文不符 | 不进候选表或证据主格；仅保留在审计记录 |
+
+`verified-with-caveat` 不是“大概正确”。它必须同时保留限定、原文位置和允许使用的收窄主张。
+
+### 4. 真实来源 trace：检索记录 → DOI → 原文
+
+课堂演示使用 S. Keshav 的 *How to Read a Paper*：
+
+1. 以题名与作者为检索键，保留查询字符串、来源和日期；
+2. 在 Crossref 核对题名、作者、刊名、年份和 DOI `10.1145/1273445.1273458`；
+3. 通过 DOI 身份和滑铁卢大学公开 PDF 回到原文；
+4. 在原文第 1 页核对文章任务是提出三遍阅读方法，而不是报告一项对照实验；
+5. 把可用主张收窄为“文章提出一种三遍阅读法”，不自造量化效果结论。
+
+完整记录见 [source-audit-demo.md](./source-audit-demo.md)。
+
+### 5. 课堂构造的失败审计示例
+
+下表的“论文 A–E”是虚构占位，只用来练习状态判断，不对应真实文献、不得引用：
 
 | AI 引用 | 是否存在 | 与原文是否一致 | 角色 | 核验状态 |
 | --- | --- | --- | --- | --- |
@@ -185,7 +209,7 @@ AND ("limitation" OR "scope" OR "boundary")
 | [论文 D] | 是 | 需进一步核验任务设置 | 待核验 | pending |
 | [论文 E] | 待查 | 作者拼接 | 探索线索 | pending |
 
-审计完成后，只有 verified 的条目才能进入候选文献表的主证据或补充证据列。
+本表只演示失败记录。真实项目必须按上述四态口径处理。
 
 ---
 
@@ -194,7 +218,7 @@ AND ("limitation" OR "scope" OR "boundary")
 候选文献表是本课的课堂产出。最小字段：
 
 ```text
-| 编号 | 题名（核验后） | 作者 | 年份 | 来源（DOI/会议/出版社） | 证据角色 | 纳入/排除 | 理由 | 核验状态 |
+| 编号 | 题名（核验后） | 作者 | 年份 | 来源（DOI/会议/出版社） | 证据角色 | 纳入/排除 | 理由 | 核验状态 | caveat/允许主张 |
 ```
 
 字段说明：
@@ -203,7 +227,8 @@ AND ("limitation" OR "scope" OR "boundary")
 - 来源优先填 DOI 或正式会议/出版社页面链接；
 - 证据角色用四类标注；如同时承担多角色，主角色写在前；
 - 纳入/排除二选一，排除必须写理由；
-- 核验状态：`pending` / `verified` / `verified-with-caveat` / `rejected`。
+- 核验状态：`pending` / `verified` / `verified-with-caveat` / `rejected`；候选表与证据主格按 §四·3 的进入规则使用；
+- `verified-with-caveat` 必须填 caveat、原文页码/节号和允许使用的主张。
 
 第 1 课已建立个人项目（`problem-definition.md`、`ai-usage-log.md`、`notes/` 等）。本课把检索记录和候选文献表写入项目，建议放在 `notes/literature-search.md` 或 `evidence-map.md` 的初版区段，后续第 4-6 课继续回写。本课不正式提交，第 6 课问题门统一检查。
 
@@ -240,7 +265,7 @@ AND ("limitation" OR "scope" OR "boundary")
 
 第六步，对 AI 综合报告给出的 5 篇文献执行来源审计（§四·3）。
 
-第七步，把 verified 条目写入候选文献表，标证据角色。本课不要求填满，只要求形成第一版可继续扩展的表。
+第七步，把 `verified`、带完整限定的 `verified-with-caveat` 以及显著标记的 `pending` 线索写入候选文献表；只有前两者可进证据地图主格，`rejected` 只留审计。本课不要求填满，只要求形成可继续扩展的表。
 
 ---
 
@@ -262,9 +287,16 @@ AND ("limitation" OR "scope" OR "boundary")
 
 从你已核验的文献里选 3 条，标注证据角色（主证据/补充/对比/探索线索）并写一句理由。如果其中存在冲突，记录你如何处理。
 
-### 练习 5：候选文献表第一版
+### 练习 5：27 分钟课堂最低产出
 
-在项目 `notes/literature-search.md` 或 `evidence-map.md` 初版区段写入：检索记录（库、式、日期、命中数、筛选数）+ 候选文献表第一版（至少 3 条 verified 条目）。本课不要求填满，只要求形成可继续扩展的起点。
+在项目 `notes/literature-search.md` 或 `evidence-map.md` 初版区段写入：
+
+1. 1 条完整检索记录（库、式、日期、命中数、纳入/排除）；
+2. 至少 2 条来源审计，其中 1 条保留为 `pending` 或 `rejected`；
+3. 至少 1 条 `verified` 或带完整限定的 `verified-with-caveat` 候选记录，含证据角色和纳入理由；
+4. 1 条 AI 使用记录。
+
+断网或自有主题无法当堂核验时，使用 [source-audit-demo.md](./source-audit-demo.md) 完成 1 条真实核验，并将自有候选条目保持为 `pending`；不得为达到数量把未核验条目升级。
 
 ---
 
@@ -300,5 +332,6 @@ AND ("limitation" OR "scope" OR "boundary")
 1. Booth, W. C. et al. *The Craft of Research*, 5th ed. University of Chicago Press, 2024. 选读 Chapter 3 "Finding and Evaluating Sources"。[出版社页面](https://press.uchicago.edu/ucp/books/book/chicago/C/bo215874008)。用途：区分来源类型、相关性、可靠性和来源在论证中的角色。
 2. Kitchenham, B., & Charters, S. *Guidelines for Performing Systematic Literature Reviews in Software Engineering*. EBSE-2007-01, 2007. 选读 protocol、search strategy 和 study selection。[机构索引](https://ebse.webspace.durham.ac.uk/ebse-bibliography/guidelines-for-performing-systematic-literature-reviews-in-software-engineering/)。用途：把检索、纳入和排除过程变成可复核方法。
 3. Page, M. J. et al. "The PRISMA 2020 statement." *BMJ* 372:n71 (2021). DOI: [10.1136/bmj.n71](https://www.bmj.com/content/372/bmj.n71)。[PRISMA 官方入口](https://www.prisma-statement.org/prisma-2020-statement)。用途：学习透明报告逻辑，不要求 CS/AI 项目机械套用医学综述格式。
+4. Keshav, S. "How to Read a Paper." *ACM SIGCOMM Computer Communication Review* 37(3), 83–84 (2007). DOI: [10.1145/1273445.1273458](https://doi.org/10.1145/1273445.1273458)。[滑铁卢大学公开 PDF](https://cs.uwaterloo.ca/~Brecht/courses/856/readings/how-to-read/keshav-paper-reading.pdf)。用途：课堂真实来源 trace 和第 4 课阅读卡示例。
 
 课后阅读采用"AI 导航 → 原文核验 → AI 质疑 → 偏差审计 → 人工定稿"流程（见 reading-list.md 第二节）。本课核心阅读为 Booth et al. Chapter 3，约 30 分钟；阅读卡持续保存在个人项目 `notes/`，不逐周正式提交，第 6 课问题门统一检查至少 3 张与个人项目直接相关的完整精读卡。
