@@ -1,6 +1,6 @@
 # 参考资料索引
 
-最后核验：2026-08-07（增加单课材料契约与文献核验四态规则）
+最后核验：2026-08-08（skills_ref.md 增补新 skill 库与 MCP 条目）
 
 `references/notes/` 保存备课分析与核验记录，`references/library/` 保存默认不纳入 Git 的原始参考。课程结论不直接以本目录中的汇总文字为依据；引用前应回到原始论文、官方文档、课程主页或上游仓库核验。
 
@@ -24,7 +24,7 @@
 | --- | --- | --- | --- | --- |
 | [material-contracts.md](./material-contracts.md) | 课程材料契约 | 规定讲义、教案、逐页母稿与正式 PPT 的内容门边界；统一文献核验四态 | 课程内部规则 | 2026-08-07 建立；不替代 `course/` 权威课程文件 |
 | [AutoResearch.md](./notes/AutoResearch.md) | 链接与项目笔记 | AutoResearch、AI Scientist、课程与工作流案例入口 | B/C | 2026-07-29 已核对文件存在；具体项目描述和链接须授课前回源 |
-| [skills_ref.md](./notes/skills_ref.md) | Skills / 工作流项目笔记 | 分析任务契约、上下文、权限、状态、循环和评价的案例池 | B/C | 2026-07-29 纳入索引；不作为 Skills 安装教程或项目质量背书 |
+| [skills_ref.md](./notes/skills_ref.md) | Skills / MCP 集合项目笔记 | 分析任务契约、上下文、权限、状态、循环和评价的案例池 | B/C | 2026-07-29 纳入索引，2026-08-08 增补新 skill 库与 MCP 条目；不作为 Skills 安装教程或项目质量背书 |
 | [nature.md](./notes/nature.md) | Nature/Science 文献清单笔记 | AI for Research 代表性论文与系统工作入口 | B/C | 2026-07-29 纳入索引；二手整理，自称非完全穷尽，含具体 DOI/期号/日期（部分标注“约”）属易变，引用具体条目前须回期刊原站核验；不作为已核验事实 |
 | [regulation.md](./notes/regulation.md) | 国内 AI 科研规范整理 | 人主智辅、AI 使用声明、责任归属与禁止事项的检索线索 | B/C | 2026-08-04 重申：二手整理不能作为正式政策证据；具体文件名、条款与发布日期须回学校、教育部、科技部或学会官网核验 |
 | [research-method-选目分析.md](./notes/research-method-选目分析.md) | 全文通读与选目记录 | 对 `research-method/` 资料逐项分级、去重并映射课程课次 | B/C | 2026-07-29 纳入索引；是备课决策记录，不是学生阅读材料或直接证据 |
